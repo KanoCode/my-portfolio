@@ -14,19 +14,23 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 h1 {
   font-size: 43px;
 }
+
 .second-header {
   font-size: var(--heading-font-size);
   color: #43b886;
 }
+
 .welcome-header-text {
   width: 90%;
   padding-top: 40px;
   text-align: center;
   margin: 0 auto;
 }
+
 .intro-text {
   padding: 0 6px;
   max-width: 80%;
@@ -34,20 +38,24 @@ h1 {
   text-align: center;
   margin: 0 auto;
 }
+
 .intro-text > ul {
   width: 60%;
   display: flex;
   margin: 45px auto;
   justify-content: space-around;
 }
+
 .next-page {
   width: fit-content;
   margin: 80px auto;
 }
+
 .nav-mobile {
   display: flex;
   justify-content: space-between;
 }
+
 .nav-mobile > span {
   width: 45px;
   display: flex;
@@ -58,6 +66,7 @@ h1 {
   top: 30%;
   font-size: 28px;
 }
+
 header {
   position: fixed;
   width: 96vw;
