@@ -3,7 +3,7 @@
 # my-portfolio
 
 > Portfolio website to showcase my work as a developer.
-![screenshot](assets/Screenshot-from-2022-03-17 17-56-48.png)
+![screenshot](assets/Screenshot-from-2022-03-17-17-56-48.png)
 
 
 ## Built With
