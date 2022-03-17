@@ -1,65 +1,65 @@
 /* useful variables */
 
-:root{
-    --heading-font-size:38px;
-    --normal-font-size:18px;
+:root {
+  --heading-font-size: 38px;
+  --normal-font-size: 18px;
 }
 
 /* welcome section */
-.welcome-section{
-    min-height: 100vh;
-width: 100vw;
-margin-top: 24%;
-background: url(./assets/mobile-images/header-illsutration-mobile.png);
-background-repeat: no-repeat;
-background-size:cover;
+.welcome-section {
+  min-height: 100vh;
+  width: 100vw;
+  margin-top: 24%;
+  background: url(./assets/mobile-images/header-illsutration-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-h1{
-    font-size: 43px;
-
+h1 {
+  font-size: 43px;
 }
-.second-header{
-font-size: var(--heading-font-size);
-color:#43B886;
+.second-header {
+  font-size: var(--heading-font-size);
+  color: #43b886;
 }
-.welcome-header-text{
-    width: 90%;
-    padding-top: 40px;
-    text-align: center;
-    margin: 0 auto;
+.welcome-header-text {
+  width: 90%;
+  padding-top: 40px;
+  text-align: center;
+  margin: 0 auto;
 }
-.intro-text{
-padding:0 6px;
-    max-width: 80%;
-font-size: var(--normal-font-size);
-    text-align: center;
-    margin: 0 auto;
+.intro-text {
+  padding: 0 6px;
+  max-width: 80%;
+  font-size: var(--normal-font-size);
+  text-align: center;
+  margin: 0 auto;
 }
-.intro-text > ul{
-    margin: 30px auto;
+.intro-text > ul {
+  width: 50%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
 }
-.next-page{
-width: fit-content;
-margin: 80px  auto;
+.next-page {
+  width: fit-content;
+  margin: 80px auto;
 }
-.nav-mobile{
-    display: flex;
-    justify-content:space-between;
+.nav-mobile {
+  display: flex;
+  justify-content: space-between;
 }
-.nav-mobile > span{
-width: 45px;
-display: flex;
-
-}
-
-.nav-mobile > span > i{
-    position: relative;
-    top:30%;
-    font-size: 28px;
-}
-header{
-    position:fixed;
-    width: 96vw;
-    top:0;
+.nav-mobile > span {
+  width: 45px;
+  display: flex;
 }
 
+.nav-mobile > span > i {
+  position: relative;
+  top: 30%;
+  font-size: 28px;
+}
+header {
+  position: fixed;
+  width: 96vw;
+  top: 0;
+}
