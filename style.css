@@ -35,9 +35,9 @@ h1 {
   margin: 0 auto;
 }
 .intro-text > ul {
-  width: 50%;
+  width: 60%;
   display: flex;
-  margin: 0 auto;
+  margin: 45px auto;
   justify-content: space-around;
 }
 .next-page {
