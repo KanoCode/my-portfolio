@@ -39,8 +39,8 @@ h1 {
   margin: 0 auto;
 }
 
-.intro-text > ul {
-  width: 60%;
+.intro-text > div {
+  width: 68%;
   display: flex;
   margin: 45px auto;
   justify-content: space-around;
