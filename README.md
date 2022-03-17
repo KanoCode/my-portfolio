@@ -1,7 +1,8 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-# my-portfolio-website
 ![screenshot](assets/Screenshot-from-2022-03-17-17-56-48.png)
+# my-portfolio-website
+
 
 
 > Portfolio website to showcase my work as a developer.
