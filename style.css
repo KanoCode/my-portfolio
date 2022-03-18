@@ -192,6 +192,7 @@ header {
   background-color: #EBF0EE;
   height: 354px;
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
   border: solid #d0d9d4 1px;
   border-radius: 2% 2% 0 0;
