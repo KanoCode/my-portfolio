@@ -1,0 +1,98 @@
+/* useful variables */
+
+:root {
+  --heading-font-size: 38px;
+  --normal-font-size: 20px;
+  --heading-color: #172b4d;
+  --text-color: #172b4d;
+}
+
+/* welcome section */
+.welcome-section {
+  min-height: 100vh;
+  width: 100vw;
+  margin-top: 24%;
+  background: url(./assets/mobile-images/header-illsutration-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 50px;
+  color: var(--heading-color);
+}
+
+.second-header {
+  font-size: var(--heading-font-size);
+  color: #43b886;
+}
+
+.welcome-header-text {
+  max-width: 76%;
+  padding-top: 40px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.intro-text {
+  padding: 0 4px;
+  max-width: 80%;
+  font-size: var(--normal-font-size);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.intro-text > p {
+  color: var(--text-color);
+}
+
+ul > li {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.intro-text > ul {
+  width: 68%;
+  display: flex;
+  margin: 45px auto;
+  justify-content: space-around;
+}
+
+#logo {
+  color: #28352f;
+  font-size: var(--heading-font-size);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.next-page {
+  width: fit-content;
+  margin: 80px auto;
+}
+
+.nav-mobile {
+  position: fixed;
+  right: 2px;
+  top: 4px;
+}
+
+.nav-mobile > nav {
+  width: fit-content;
+  display: flex;
+}
+
+.nav-mobile > nav > i {
+  position: relative;
+  color: #28352f;
+  margin: auto;
+  top: 30%;
+  font-size: 28px;
+}
+
+header {
+  position: fixed;
+  width: 96vw;
+  top: 0;
+}
