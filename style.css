@@ -1,19 +1,22 @@
 /* useful variables */
 
 :root {
-  --heading-font-size: 38px;
+  --heading-font-size: 40px;
   --normal-font-size: 20px;
   --heading-color: #172b4d;
   --text-color: #172b4d;
-  --btn-active: #36b37f;
-  --btn-normal: #43b380;
+  --btn-normal: #36b37f;
   --card-text-color: #3a4a42;
+  --card-text-font-size: 12px;
+  --card-header-font-size: 24px;
+  --btn-pressed: #008552;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 /* welcome section */
@@ -30,6 +33,10 @@ h1 {
   font-size: 50px;
   color: var(--heading-color);
 }
+p {
+  font-size: var(--normal-font-size);
+  line-height: 28px;
+}
 
 .second-header {
   font-size: var(--heading-font-size);
@@ -37,7 +44,7 @@ h1 {
 }
 
 .welcome-header-text {
-  max-width: 76%;
+  /* max-width: 76%; */
   padding-top: 40px;
   text-align: center;
   margin: 0 auto;
@@ -71,9 +78,13 @@ ul > li {
 
 #logo {
   color: #28352f;
-  font-size: var(--heading-font-size);
+  font-size: 20px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-style: normal;
+  position: fixed;
+  top: 54px;
+  left: 24px;
 }
 
 .next-page {
@@ -83,8 +94,8 @@ ul > li {
 
 .nav-mobile {
   position: fixed;
-  right: 2px;
-  top: 4px;
+  right: 29px;
+  top: 52px;
 }
 
 .nav-mobile > nav {
@@ -108,15 +119,11 @@ header {
 
 /* work section */
 
-.work-section {
-  display: grid;
-  grid-template-columns: auto;
-}
-
 .work-section-title {
   color: var(--heading-color);
   font-size: var(--heading-font-size);
-  max-width: 60%;
+  height: 291px;
+  max-width: 80%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -127,16 +134,11 @@ header {
   width: 80px;
   height: 6px;
   background-color: #43b886;
-  margin: 0 auto;
+  margin: 24px auto;
   border-radius: 3px 3px;
 }
 
 /* cards */
-
-.card-container {
-  margin: 0 auto;
-  width: 100%;
-}
 
 .img-placeholder {
   height: 500px;
@@ -145,13 +147,12 @@ header {
 
 /* work section cards */
 .card-work {
-  max-width: 23rem;
+  max-width: 369px;
   background-color: #ebf0ee;
   height: 554px;
-  margin: 0 auto;
-  margin-top: 10%;
   display: flex;
-  width: 75%;
+  margin: 24px auto;
+  width: 327px;
   flex-direction: column;
   border: solid #d0d9d4 1px;
   border-radius: 2% 2% 0 0;
@@ -163,18 +164,40 @@ h2 {
 
 .card-work h2 {
   color: #3a4a42;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32px;
+}
+.card-work h3 {
+  font-size: var(--card-text-font-size);
 }
 
 button {
   background-color: var(--btn-normal);
-  height: 40px;
+  height: 48px;
   margin: 4% auto;
   border: none;
-  border-radius: 4%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  border-radius: 4px;
   display: block;
+
+  padding: 12px;
   cursor: pointer;
-  padding: 2%;
   color: #fff;
+}
+button:active {
+  background-color: var(--btn-normal);
+}
+button:focus {
+  background-color: var(--btn-pressed);
+}
+
+button:hover {
+  background-color: var(--btn-normal);
+  opacity: 0.6;
 }
 
 .languages {
@@ -188,7 +211,6 @@ button {
   height: 480px;
   display: flex;
   flex-direction: column;
-  width: 100%;
   justify-content: space-around;
   margin: 0 auto;
   color: var(--card-text-color);
@@ -204,43 +226,44 @@ button {
 .languages > li {
   width: fit-content;
   background-color: #ebf0ee;
-  border-radius: 4%;
-  padding: 8px;
+  border-radius: 4px;
+  padding: 12px;
   margin: 2px;
 }
 
 /* About section */
 .about-me {
   width: 100%;
-  display: grid;
-  grid-template-columns: auto;
 }
 
 /* about section cards */
 
 .card-about {
-  max-width: 23rem;
+  max-width: 369px;
   background-color: #ebf0ee;
   height: 354px;
   display: flex;
-  margin: 10px auto;
+  margin: 24px auto;
   flex-direction: column;
+  width: 320px;
   border: solid #d0d9d4 1px;
   border-radius: 2% 2% 0 0;
 }
 
 .card-about h2 {
   color: #3a4a42;
+  font-size: var(--card-header-font-size);
 }
 
 .card-about > .img-placeholder > img {
   position: relative;
   top: 20%;
-  left: 36%;
+  left: 30%;
 }
 
 .card-about > .img-placeholder {
   height: 310px;
+  width: 327px;
 }
 
 .card-about > .card-details {
@@ -256,8 +279,8 @@ button {
 
 .card-about > .card-details > h2 {
   color: var(--heading-color);
+  font-size: var(--card-header-font-size);
   text-align: center;
-  padding: 12px;
 }
 
 .card-about > .card-details > .languages {
@@ -270,23 +293,27 @@ button {
 .card-about > .card-details > .languages > li {
   width: fit-content;
   background-color: #fff;
+  font-size: var(--card-text-font-size);
   margin: 2%;
 }
 
 .about-me-description p {
   color: var(--text-color);
 }
+main {
+  display: grid;
+  grid-template-columns: auto;
+}
 
 .about-me-description {
-  background:
-    url(./assets/mobile-images/bg-image-mobile-about-me.png) no-repeat
-    right top,
+  background: url(./assets/mobile-images/bg-image-mobile-about-me.png) no-repeat
+      right top,
     url(./assets/mobile-images/illustration-about-me-mobile.svg) no-repeat left
-    bottom;
+      bottom;
   flex-direction: column;
-  min-height: 340px;
+
+  height: 510px;
   display: flex;
   justify-content: space-evenly;
-  margin: 40px;
   text-align: center;
 }
