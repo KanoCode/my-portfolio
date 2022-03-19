@@ -33,6 +33,7 @@ h1 {
   font-size: 50px;
   color: var(--heading-color);
 }
+
 p {
   font-size: var(--normal-font-size);
   line-height: 28px;
@@ -169,6 +170,7 @@ h2 {
   font-size: 24px;
   line-height: 32px;
 }
+
 .card-work h3 {
   font-size: var(--card-text-font-size);
 }
@@ -183,14 +185,15 @@ button {
   font-size: 17px;
   border-radius: 4px;
   display: block;
-
   padding: 12px;
   cursor: pointer;
   color: #fff;
 }
+
 button:active {
   background-color: var(--btn-normal);
 }
+
 button:focus {
   background-color: var(--btn-pressed);
 }
@@ -300,18 +303,19 @@ button:hover {
 .about-me-description p {
   color: var(--text-color);
 }
+
 main {
   display: grid;
   grid-template-columns: auto;
 }
 
 .about-me-description {
-  background: url(./assets/mobile-images/bg-image-mobile-about-me.png) no-repeat
-      right top,
+  background:
+    url(./assets/mobile-images/bg-image-mobile-about-me.png) no-repeat
+    right top,
     url(./assets/mobile-images/illustration-about-me-mobile.svg) no-repeat left
-      bottom;
+    bottom;
   flex-direction: column;
-
   height: 510px;
   display: flex;
   justify-content: space-evenly;
