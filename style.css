@@ -1,10 +1,22 @@
 /* useful variables */
 
 :root {
-  --heading-font-size: 38px;
+  --heading-font-size: 40px;
   --normal-font-size: 20px;
   --heading-color: #172b4d;
   --text-color: #172b4d;
+  --btn-normal: #36b37f;
+  --card-text-color: #3a4a42;
+  --card-text-font-size: 12px;
+  --card-header-font-size: 24px;
+  --btn-pressed: #008552;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 /* welcome section */
@@ -22,13 +34,18 @@ h1 {
   color: var(--heading-color);
 }
 
+p {
+  font-size: var(--normal-font-size);
+  line-height: 28px;
+}
+
 .second-header {
   font-size: var(--heading-font-size);
   color: #43b886;
 }
 
 .welcome-header-text {
-  max-width: 76%;
+  /* max-width: 76%; */
   padding-top: 40px;
   text-align: center;
   margin: 0 auto;
@@ -62,9 +79,13 @@ ul > li {
 
 #logo {
   color: #28352f;
-  font-size: var(--heading-font-size);
+  font-size: 20px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-style: normal;
+  position: fixed;
+  top: 54px;
+  left: 24px;
 }
 
 .next-page {
@@ -74,8 +95,8 @@ ul > li {
 
 .nav-mobile {
   position: fixed;
-  right: 2px;
-  top: 4px;
+  right: 29px;
+  top: 52px;
 }
 
 .nav-mobile > nav {
@@ -95,4 +116,208 @@ header {
   position: fixed;
   width: 96vw;
   top: 0;
+}
+
+/* work section */
+
+.work-section-title {
+  color: var(--heading-color);
+  font-size: var(--heading-font-size);
+  height: 291px;
+  max-width: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.work-section-title > span {
+  width: 80px;
+  height: 6px;
+  background-color: #43b886;
+  margin: 24px auto;
+  border-radius: 3px 3px;
+}
+
+/* cards */
+
+.img-placeholder {
+  height: 500px;
+  border-radius: 8% 8% 0 0;
+}
+
+/* work section cards */
+.card-work {
+  max-width: 369px;
+  background-color: #ebf0ee;
+  height: 554px;
+  display: flex;
+  margin: 24px auto;
+  width: 327px;
+  flex-direction: column;
+  border: solid #d0d9d4 1px;
+  border-radius: 2% 2% 0 0;
+}
+
+h2 {
+  color: #172b4d;
+}
+
+.card-work h2 {
+  color: #3a4a42;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.card-work h3 {
+  font-size: var(--card-text-font-size);
+}
+
+button {
+  background-color: var(--btn-normal);
+  height: 48px;
+  margin: 4% auto;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  border-radius: 4px;
+  display: block;
+  padding: 12px;
+  cursor: pointer;
+  color: #fff;
+}
+
+button:active {
+  background-color: var(--btn-normal);
+}
+
+button:focus {
+  background-color: var(--btn-pressed);
+}
+
+button:hover {
+  background-color: var(--btn-normal);
+  opacity: 0.6;
+}
+
+.languages {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.card-details {
+  background-color: #fff;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  color: var(--card-text-color);
+  border-radius: 4% 4% 0 0;
+}
+
+.card-description {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.languages > li {
+  width: fit-content;
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  padding: 12px;
+  margin: 2px;
+}
+
+/* About section */
+.about-me {
+  width: 100%;
+}
+
+/* about section cards */
+
+.card-about {
+  max-width: 369px;
+  background-color: #ebf0ee;
+  height: 354px;
+  display: flex;
+  margin: 24px auto;
+  flex-direction: column;
+  width: 320px;
+  border: solid #d0d9d4 1px;
+  border-radius: 2% 2% 0 0;
+}
+
+.card-about h2 {
+  color: #3a4a42;
+  font-size: var(--card-header-font-size);
+}
+
+.card-about > .img-placeholder > img {
+  position: relative;
+  top: 20%;
+  left: 30%;
+}
+
+.card-about > .img-placeholder {
+  height: 310px;
+  width: 327px;
+}
+
+.card-about > .card-details {
+  width: 100%;
+  background-color: inherit;
+  height: 80%;
+}
+
+.about-me-description h2 {
+  font-size: var(--heading-font-size);
+  font-weight: bold;
+}
+
+.card-about > .card-details > h2 {
+  color: var(--heading-color);
+  font-size: var(--card-header-font-size);
+  text-align: center;
+}
+
+.card-about > .card-details > .languages {
+  display: flex;
+  justify-content: center;
+  color: #43b37f;
+  width: 100%;
+}
+
+.card-about > .card-details > .languages > li {
+  width: fit-content;
+  background-color: #fff;
+  font-size: var(--card-text-font-size);
+  margin: 2%;
+}
+
+.about-me-description p {
+  color: var(--text-color);
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.about-me-description {
+  background:
+    url(./assets/mobile-images/bg-image-mobile-about-me.png) no-repeat
+    right top,
+    url(./assets/mobile-images/illustration-about-me-mobile.svg) no-repeat left
+    bottom;
+  flex-direction: column;
+  height: 510px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
 }
