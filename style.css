@@ -26,7 +26,7 @@
   margin-top: 24%;
   background: url(./assets/mobile-images/header-illsutration-mobile.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 h1 {
