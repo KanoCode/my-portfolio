@@ -324,12 +324,10 @@ main {
 /* contact form */
 .get-in-touch {
   width: 100vw;
-  background: url(./assets/mobile-images/illustration-contact-form.svg)
-    no-repeat bottom right;
-}
+ }
 
 form {
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-flow: column wrap;
   margin: 20px auto;
@@ -360,4 +358,12 @@ textarea {
 input:focus-visible, textarea:focus-visible{
   outline: #60c095 solid 1px;
 }
+/* footer */
 
+footer{
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  background: url(./assets/mobile-images/illustration-contact-form.svg) no-repeat top right;
+}
