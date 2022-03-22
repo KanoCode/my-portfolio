@@ -327,3 +327,20 @@ main {
   width: 100vw;
   background: url(./assets/mobile-images/illustration-contact-form.svg) no-repeat bottom right;
 }
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus {
+  border: 1px solid #60c095;
+}
+
+input {
+  width: 90%;
+  padding: 4px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
