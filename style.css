@@ -321,3 +321,9 @@ main {
   justify-content: space-evenly;
   text-align: center;
 }
+
+/* contact form */
+.get-in-touch{
+  width: 100vw;
+  background: url(./assets/mobile-images/illustration-contact-form.svg) no-repeat bottom right;
+}
