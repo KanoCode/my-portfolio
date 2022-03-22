@@ -26,7 +26,14 @@
   margin-top: 24%;
   background: url(./assets/mobile-images/header-illsutration-mobile.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+}
+
+.social-links {
+  font-size: 26px;
+  color: #505f79;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
@@ -320,4 +327,66 @@ main {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+}
+
+/* contact form */
+.get-in-touch {
+  width: 100vw;
+  min-height: 70vh;
+  background:
+    url(./assets/mobile-images/illustration-contact-form.svg)
+    no-repeat bottom right;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 20px auto;
+}
+
+input {
+  height: 48px;
+}
+
+input,
+textarea {
+  width: 98%;
+  padding: 4%;
+  color: #6b778c;
+  margin: 10px auto;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+}
+
+.get-in-touch > .intro-text {
+  color: #172b4d;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 0 4px;
+}
+
+::placeholder {
+  color: #6b778c;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: #60c095 solid 1px;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100px;
+  color: #42526e;
+  align-items: center;
+}
+
+footer > .social-links {
+  width: 60%;
 }
