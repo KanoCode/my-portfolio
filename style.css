@@ -30,7 +30,7 @@
 }
 
 .social-links {
-  font-size: 40px;
+  font-size: 26px;
   color: #505f79;
   display: flex;
   justify-content: center;
@@ -317,11 +317,10 @@ main {
 }
 
 .about-me-description {
-  background:
-    url(./assets/mobile-images/bg-image-mobile-about-me.png) no-repeat
-    right top,
+  background: url(./assets/mobile-images/bg-image-mobile-about-me.png) no-repeat
+      right top,
     url(./assets/mobile-images/illustration-about-me-mobile.svg) no-repeat left
-    bottom;
+      bottom;
   flex-direction: column;
   height: 510px;
   display: flex;
@@ -333,8 +332,7 @@ main {
 .get-in-touch {
   width: 100vw;
   min-height: 70vh;
-  background:
-    url(./assets/mobile-images/illustration-contact-form.svg)
+  background: url(./assets/mobile-images/illustration-contact-form.svg)
     no-repeat bottom right;
 }
 
@@ -365,6 +363,9 @@ textarea {
   font-style: normal;
   font-weight: 700;
   padding: 0 4px;
+}
+::placeholder {
+  color: #6b778c;
 }
 
 input:focus-visible,
