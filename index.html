@@ -20,11 +20,11 @@
       referrerpolicy="no-referrer"
     />
     <link rel="icon" href="./assets/coding.png" type="image/x-icon" />
-  </head>
-  <body>
+  </head>sectionbody>
     <header>
       <a id="logo" href="#">Welcome</a>
-      <div class="nav-desktop"></div>
+    
+      <section class="nav-desktop"></div>
 
       <div class="nav-mobile">
         <nav class="btn"><i class="fa-solid fa-bars"></i></nav>
@@ -44,16 +44,10 @@
         </p>
         <ul class="social-links">
           <li>
-            <img
-              src="./assets/social-media/twitter.svg"
-              alt="twitter social media icon "
-            />
+            <i class="fa-brands fa-twitter"></i>
           </li>
           <li>
-            <img
-              src="./assets/social-media/Linkedin.svg"
-              alt="github social media icon "
-            />
+            <i class="fa-brands fa-linkedin-in"></i>
           </li>
           <li>
             <img
@@ -68,10 +62,7 @@
             />
           </li>
           <li>
-            <img
-              src="./assets/social-media/angellist.svg"
-              alt="angellist social media icon "
-            />
+            <i class="fa-brands fa-angellist"></i>
           </li>
         </ul>
       </div>
@@ -251,18 +242,18 @@
       </section>
       <section class="get-in-touch">
         <h3 class="intro-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
-<form action="" method="post">
+<form action="https://formspree.io/f/mpzblelz" method="post">
 
 <ul>
 
 <li>
-<input type="text" value="First Name" name="user_name">
+<input type="text" required value="First Name" maxlength="30" name="user_name">
 </li>
 <li>
-  <input type="email" value="Email address" name="user_email" id="">
+  <input required type="email" value="Email address" name="user_email" >
 </li>
 <li>
-  <textarea name="user_message" id="message" cols="30" rows="10">Enter text here</textarea>
+  <textarea name="user_message" maxlength="500" required id="message" cols="30" rows="10">Enter text here</textarea>
 </li>
 <li><button type="submit">Get in Touch</button></li>
 </ul>
@@ -270,41 +261,37 @@
 </form>
 
       </section>
+     
+    
     </main>
     <footer>
-      <ul class="social-links">
-        <li>
-          <img
-            src="./assets/social-media/twitter.svg"
-            alt="twitter social media icon "
-          />
-        </li>
-        <li>
-          <img
-            src="./assets/social-media/Linkedin.svg"
-            alt="github social media icon "
-          />
-        </li>
-        <li>
-          <img
-            src="./assets/social-media/medium.svg"
-            alt="Medium social media icon "
-          />
-        </li>
-        <li>
-          <img
-            src="./assets/social-media/github.svg"
-            alt="github social media icon "
-          />
-        </li>
-        <li>
-          <img
-            src="./assets/social-media/angellist.svg"
-            alt="angellist social media icon "
-          />
-        </li>
-      </ul>
-      
+
+
+
+<ul class="social-links">
+  <li>
+    <i class="fa-brands fa-twitter"></i>
+  </li>
+  <li>
+    <i class="fa-brands fa-linkedin-in"></i>
+  </li>
+  <li>
+    <img
+      src="./assets/social-media/medium.svg"
+      alt="Medium social media icon "
+    />
+  </li>
+  <li>
+    <img
+      src="./assets/social-media/github.svg"
+      alt="github social media icon "
+    />
+  </li>
+  <li>
+    <i class="fa-brands fa-angellist"></i>
+  </li>
+</ul>
+<p>myemailhere@email.com</p>
     </footer>
   </body>
 </html>

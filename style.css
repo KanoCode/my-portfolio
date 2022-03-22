@@ -26,9 +26,15 @@
   margin-top: 24%;
   background: url(./assets/mobile-images/header-illsutration-mobile.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
+.social-links {
+  font-size: 40px;
+  color: #505f79;
+  display: flex;
+  justify-content: center;
+}
 h1 {
   font-size: 50px;
   color: var(--heading-color);
@@ -91,6 +97,10 @@ ul > li {
 .next-page {
   width: fit-content;
   margin: 80px auto;
+}
+.social-links {
+  font-size: 26px;
+  color: #505f79;
 }
 
 .nav-mobile {
@@ -324,7 +334,10 @@ main {
 /* contact form */
 .get-in-touch {
   width: 100vw;
- }
+  min-height: 70vh;
+  background: url(./assets/mobile-images/illustration-contact-form.svg)
+    no-repeat bottom right;
+}
 
 form {
   width: 80%;
@@ -347,23 +360,27 @@ textarea {
   border-radius: 4px;
 }
 
-.get-in-touch > .intro-text{
- color:#172b4d;
- font-size: 40px;
- font-style: normal;
- font-weight: 700; 
- padding:0 4px;
+.get-in-touch > .intro-text {
+  color: #172b4d;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 0 4px;
 }
 
-input:focus-visible, textarea:focus-visible{
+input:focus-visible,
+textarea:focus-visible {
   outline: #60c095 solid 1px;
 }
 /* footer */
 
-footer{
-  border: solid;
+footer {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  min-height: 200px;
-  background: url(./assets/mobile-images/illustration-contact-form.svg) no-repeat top right;
+  min-height: 100px;
+  align-items: center;
+}
+footer > .social-links {
+  width: 60%;
 }
