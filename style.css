@@ -29,6 +29,13 @@
   background-size: 100%;
 }
 
+.social-links {
+  font-size: 26px;
+  color: #505f79;
+  display: flex;
+  justify-content: center;
+}
+
 h1 {
   font-size: 50px;
   color: var(--heading-color);
@@ -63,9 +70,6 @@ p {
 }
 
 ul > li {
-  margin: auto;
-  display: flex;
-  justify-content: center;
   list-style: none;
 }
 
@@ -90,10 +94,6 @@ ul > li {
 .next-page {
   width: fit-content;
   margin: 80px auto;
-}
-.social-links{
-  font-size: 26px;
-  color:#505F79;
 }
 
 .nav-mobile {
@@ -328,6 +328,89 @@ main {
   text-align: center;
 }
 
+
+/* contact form */
+.get-in-touch {
+  width: 100vw;
+  min-height: 70vh;
+  background:
+    url(./assets/mobile-images/illustration-contact-form.svg)
+    no-repeat bottom right;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 20px auto;
+}
+
+input {
+  height: 48px;
+}
+.second-name-input{
+  display: none;
+}
+
+input,
+textarea {
+  width: 98%;
+  padding: 4%;
+  color: #6b778c;
+  margin: 10px auto;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+}
+
+.get-in-touch > .intro-text {
+  color: #172b4d;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 0 4px;
+}
+
+::placeholder {
+  color: #6b778c;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: #60c095 solid 1px;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100px;
+  color: #42526e;
+  align-items: center;
+}
+
+footer > .social-links {
+  width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* desktop view starts here */
 
 
@@ -357,16 +440,24 @@ display: flex;
      height: 100px;
    }
 
+   .get-in-touch .intro-text {
+    padding: 0 4px;
+    max-width: 30%;
+    height: 46%;
+    margin:4% auto;
+  
+  }
+
 
   .welcome-section{
     background: transparent;
   width: 90vw;
-  margin-top: 15%;
   margin: 15% auto 0 auto;
   }
   .welcome-header-text{
     font-size: 48px;
   }
+
 
 
   .next-page{
@@ -386,9 +477,21 @@ display: flex;
       url(./assets/Desktop-images/illustration-about-me-2-desktop.png) no-repeat left
       bottom;
   }
+  .get-in-touch{
+    
+    display: flex;
+    align-items: flex-start;
+    height: 100vh;
+    background:
+    url(./assets/Desktop-images/contact\ form-illustratoin-3-desktop.svg) no-repeat right
+    bottom, url(./assets/Desktop-images/illustration-1-contact-form-desktop.svg) no-repeat left
+    bottom, url(./assets/Desktop-images/illustration-2-contact-form-desktop.svg) no-repeat 30%
+    bottom;
+  
+  }
+  
+ 
 
   
 }
-
-
 
