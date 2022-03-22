@@ -35,6 +35,7 @@
   display: flex;
   justify-content: center;
 }
+
 h1 {
   font-size: 50px;
   color: var(--heading-color);
@@ -97,10 +98,6 @@ ul > li {
 .next-page {
   width: fit-content;
   margin: 80px auto;
-}
-.social-links {
-  font-size: 26px;
-  color: #505f79;
 }
 
 .nav-mobile {
@@ -320,10 +317,11 @@ main {
 }
 
 .about-me-description {
-  background: url(./assets/mobile-images/bg-image-mobile-about-me.png) no-repeat
-      right top,
+  background:
+    url(./assets/mobile-images/bg-image-mobile-about-me.png) no-repeat
+    right top,
     url(./assets/mobile-images/illustration-about-me-mobile.svg) no-repeat left
-      bottom;
+    bottom;
   flex-direction: column;
   height: 510px;
   display: flex;
@@ -335,7 +333,8 @@ main {
 .get-in-touch {
   width: 100vw;
   min-height: 70vh;
-  background: url(./assets/mobile-images/illustration-contact-form.svg)
+  background:
+    url(./assets/mobile-images/illustration-contact-form.svg)
     no-repeat bottom right;
 }
 
@@ -372,6 +371,7 @@ input:focus-visible,
 textarea:focus-visible {
   outline: #60c095 solid 1px;
 }
+
 /* footer */
 
 footer {
@@ -379,9 +379,10 @@ footer {
   justify-content: center;
   flex-direction: column;
   min-height: 100px;
-  color:#42526E;
+  color: #42526e;
   align-items: center;
 }
+
 footer > .social-links {
   width: 60%;
 }
