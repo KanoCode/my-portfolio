@@ -92,6 +92,10 @@ ul > li {
   width: fit-content;
   margin: 80px auto;
 }
+.social-links{
+  font-size: 26px;
+  color:#505F79;
+}
 
 .nav-mobile {
   position: fixed;
