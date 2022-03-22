@@ -45,7 +45,6 @@ p {
 }
 
 .welcome-header-text {
-  /* max-width: 76%; */
   padding-top: 40px;
   text-align: center;
   margin: 0 auto;
@@ -114,6 +113,9 @@ ul > li {
   margin: auto;
   top: 30%;
   font-size: 28px;
+}
+.nav-desktop{
+  display: none;
 }
 
 header {
@@ -325,3 +327,68 @@ main {
   justify-content: space-evenly;
   text-align: center;
 }
+
+/* desktop view starts here */
+
+
+@media screen and (min-width:1024px) {
+
+   body {
+    background-image: url(./assets/Desktop-images/Header-llustration-desktop.svg);
+  background-repeat: no-repeat;
+  background-size:100%;
+   } 
+  
+   /* Nav bar */
+
+.nav-mobile{
+  display: none;
+}
+
+   .nav-desktop{
+     width: 28%;
+     /* margin: 0 auto; */
+display: flex;
+     position: fixed;
+     right: 36%;
+     color:#172b4d;
+     top: 0;
+     text-align: center;
+     height: 100px;
+   }
+
+
+  .welcome-section{
+    background: transparent;
+  width: 90vw;
+  margin-top: 15%;
+  margin: 15% auto 0 auto;
+  }
+  .welcome-header-text{
+    font-size: 48px;
+  }
+
+
+  .next-page{
+    margin-top: 10%;
+  }
+
+  .welcome-section .social-links{
+   width: 40%;
+  }
+
+
+
+  .about-me-description {
+    background:
+      url(./assets/Desktop-images/illustration-about-me-1-desktop.svg) no-repeat
+      right top,
+      url(./assets/Desktop-images/illustration-about-me-2-desktop.png) no-repeat left
+      bottom;
+  }
+
+  
+}
+
+
+
