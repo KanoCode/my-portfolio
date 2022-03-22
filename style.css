@@ -379,6 +379,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   min-height: 100px;
+  color:#42526E;
   align-items: center;
 }
 footer > .social-links {
