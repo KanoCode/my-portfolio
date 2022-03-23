@@ -114,7 +114,7 @@ ul > li {
   top: 30%;
   font-size: 28px;
 }
-.nav-desktop{
+.nav-desktop {
   display: none;
 }
 
@@ -315,11 +315,10 @@ main {
 }
 
 .about-me-description {
-  background:
-    url(./assets/mobile-images/bg-image-mobile-about-me.png) no-repeat
-    right top,
+  background: url(./assets/mobile-images/bg-image-mobile-about-me.png) no-repeat
+      right top,
     url(./assets/mobile-images/illustration-about-me-mobile.svg) no-repeat left
-    bottom;
+      bottom;
   flex-direction: column;
   height: 510px;
   display: flex;
@@ -327,16 +326,14 @@ main {
   text-align: center;
 }
 
-
 /* contact form */
-.contact-us{
+.contact-us {
   background: transparent;
 }
 .get-in-touch {
   width: 100vw;
   min-height: 70vh;
-  background:
-    url(./assets/mobile-images/illustration-contact-form.svg)
+  background: url(./assets/mobile-images/illustration-contact-form.svg)
     no-repeat bottom right;
 }
 
@@ -350,7 +347,7 @@ form {
 input {
   height: 48px;
 }
-.second-name-input{
+.second-name-input {
   display: none;
 }
 
@@ -381,7 +378,6 @@ textarea:focus-visible {
   outline: #60c095 solid 1px;
 }
 
-
 /* footer */
 
 footer {
@@ -397,160 +393,151 @@ footer > .social-links {
   width: 70%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* desktop view starts here */
 
-
-@media screen and (min-width:1024px) {
-
-   body {
+@media screen and (min-width: 1024px) {
+  body {
     background-image: url(./assets/Desktop-images/Header-llustration-desktop.svg);
-  background-repeat: no-repeat;
-  background-size:100%;
-   } 
-  
-   /* Nav bar */
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 
-.nav-mobile{
-  display: none;
-}
+  /* Nav bar */
 
-   .nav-desktop{
-     width: 28%;
-display: flex;
-     position: fixed;
-     right: 36%;
-     justify-content: center;
-     align-items: center;
-     color:#172b4d;
+  .nav-mobile {
+    display: none;
+  }
+
+  .nav-desktop {
+    width: 28%;
+    display: flex;
+    position: fixed;
+    right: 36%;
+    justify-content: center;
+    align-items: center;
+    color: #172b4d;
     font-size: 15px;
-     top: 0;
-     text-align: center;
-     height: 100px;
-   }
-   .nav-desktop li{
-     margin: 10px;
-   }
+    top: 0;
+    text-align: center;
+    height: 100px;
+  }
+  .nav-desktop li {
+    margin: 10px;
+  }
 
-
-   .get-in-touch .intro-text {
+  .get-in-touch > .intro-text {
     padding: 0 4px;
-    max-width: 30%;
-    height: 46%;
-    margin:4% auto;
-  
+    height: 66%;
+    margin: 40px 0 auto 0;
+    grid-column: 2/6;
   }
-  .contact-us{
-    width: 100%;
-  background:
-  url(./assets/Desktop-images/contact\ form-illustratoin-3-desktop.svg) no-repeat right
-  bottom, url(./assets/Desktop-images/illustration-1-contact-form-desktop.svg) no-repeat left
-  bottom, url(./assets/Desktop-images/illustration-2-contact-form-desktop.svg) no-repeat 30%
-  bottom;
+  .get-in-touch > .intro-text > h3 {
+    width: 400px;
+  }
+  .work-section-title {
+    height: 221px;
   }
 
+  form {
+    margin: 0;
+    width: 96%;
+    grid-column: 6 / span 6;
+  }
 
-  .welcome-section{
+  .welcome-section {
     background: transparent;
-  width: 90vw;
-  margin: 15% auto 0 auto;
+    width: 90vw;
+    margin: 15% auto 0 auto;
   }
-  .welcome-header-text{
+  .welcome-header-text {
     font-size: 48px;
   }
-
-  .card-container{
-    display: grid;
-    width: 76vw;
-    margin: auto;
-    grid-template: auto auto / auto auto auto;
-    grid-gap: 20px;
+  .work-section {
+    width: 100%;
   }
-.card-work{
-  margin:0;
-  height: 474px;
 
-}
-.get-in-touch{
-  width: 76vw;
-  margin: 0 auto;
-}
+  .card-container {
+    display: grid;
+    width: 76%;
+    margin: 0 auto;
+    grid-template: auto auto / repeat(3, 1fr);
+    justify-items: center;
+    grid-gap: 10px;
+  }
+  .card-work {
+    margin: 0;
+    height: 474px;
+  }
+  .get-in-touch {
+    width: 86vw;
+    margin: 0 auto;
+  }
 
+  .second-name-input {
+    display: inline;
+    margin-right: 0;
+  }
+  .desktop-view-input {
+    display: flex;
+    width: 98%;
+  }
 
-.second-name-input{
-  display:inline;
-margin-right: 0;
-}
-.desktop-view-input{
-display: flex;
-width: 98%;
-}
+  .desktop-view-input > input {
+    width: 48%;
+    margin-left: 0;
+  }
 
-.desktop-view-input > input{
-  width: 48%;
-  margin-left: 0;
+  #logo {
+    display: none;
+  }
 
-}
-
-#logo{
-  display: none;
-}
-
-  .next-page{
+  .next-page {
     margin-top: 10%;
   }
 
-  .welcome-section .social-links{
-   width: 40%;
+  .welcome-section .social-links {
+    width: 40%;
   }
-
-
 
   .about-me-description {
-    background:
-      url(./assets/Desktop-images/illustration-about-me-1-desktop.svg) no-repeat
-      right top,
-      url(./assets/Desktop-images/illustration-about-me-2-desktop.png) no-repeat left
-      bottom;
+    background: url(./assets/Desktop-images/illustration-about-me-1-desktop.svg)
+        no-repeat right top,
+      url(./assets/Desktop-images/illustration-about-me-2-desktop.png) no-repeat
+        left bottom;
+    flex-direction: column;
+    height: 410px;
   }
-  .get-in-touch{
-    
-    display: flex;
-    align-items: flex-start;
-    height: 100vh;
-   background: transparent;
-  
+  .about-me-description > p {
+    width: 60%;
   }
 
+  .get-in-touch {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    height: 80vh;
+
+    background: url(./assets/Desktop-images/contact\ form-illustratoin-3-desktop.svg)
+        no-repeat right bottom,
+      url(./assets/Desktop-images/illustration-1-contact-form-desktop.svg)
+        no-repeat left bottom,
+      url(./assets/Desktop-images/illustration-2-contact-form-desktop.svg)
+        no-repeat 30% bottom;
+  }
 
   /* footer-desktop */
   footer > p {
     display: none;
-  
   }
 
-footer > .social-links {
-  width: 25%;
-  justify-content: space-around;
-
+  footer > .social-links {
+    width: 25%;
+    justify-content: space-around;
+  }
+  hr {
+    background-color: #dfe1e6;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
-
-  
-}
-
