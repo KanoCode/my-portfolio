@@ -114,6 +114,7 @@ ul > li {
   top: 30%;
   font-size: 28px;
 }
+
 .nav-desktop {
   display: none;
 }
@@ -315,10 +316,11 @@ main {
 }
 
 .about-me-description {
-  background: url(./assets/mobile-images/bg-image-mobile-about-me.png) no-repeat
-      right top,
+  background:
+    url(./assets/mobile-images/bg-image-mobile-about-me.png) no-repeat
+    right top,
     url(./assets/mobile-images/illustration-about-me-mobile.svg) no-repeat left
-      bottom;
+    bottom;
   flex-direction: column;
   height: 510px;
   display: flex;
@@ -330,10 +332,12 @@ main {
 .contact-us {
   background: transparent;
 }
+
 .get-in-touch {
   width: 100vw;
   min-height: 70vh;
-  background: url(./assets/mobile-images/illustration-contact-form.svg)
+  background:
+    url(./assets/mobile-images/illustration-contact-form.svg)
     no-repeat bottom right;
 }
 
@@ -347,6 +351,7 @@ form {
 input {
   height: 48px;
 }
+
 .second-name-input {
   display: none;
 }
@@ -421,6 +426,7 @@ footer > .social-links {
     text-align: center;
     height: 100px;
   }
+
   .nav-desktop li {
     margin: 10px;
   }
@@ -431,9 +437,11 @@ footer > .social-links {
     margin: 40px 0 auto 0;
     grid-column: 2/6;
   }
+
   .get-in-touch > .intro-text > h3 {
     width: 400px;
   }
+
   .work-section-title {
     height: 221px;
   }
@@ -449,9 +457,11 @@ footer > .social-links {
     width: 90vw;
     margin: 15% auto 0 auto;
   }
+
   .welcome-header-text {
     font-size: 48px;
   }
+
   .work-section {
     width: 100%;
   }
@@ -464,19 +474,17 @@ footer > .social-links {
     justify-items: center;
     grid-gap: 10px;
   }
+
   .card-work {
     margin: 0;
     height: 474px;
-  }
-  .get-in-touch {
-    width: 86vw;
-    margin: 0 auto;
   }
 
   .second-name-input {
     display: inline;
     margin-right: 0;
   }
+
   .desktop-view-input {
     display: flex;
     width: 98%;
@@ -495,20 +503,34 @@ footer > .social-links {
     margin-top: 10%;
   }
 
+  footer > .social-links {
+    width: 25%;
+    justify-content: space-around;
+  }
+
   .welcome-section .social-links {
     width: 40%;
   }
 
   .about-me-description {
-    background: url(./assets/Desktop-images/illustration-about-me-1-desktop.svg)
-        no-repeat right top,
+    background:
+      url(./assets/Desktop-images/illustration-about-me-1-desktop.svg)
+      no-repeat right top,
       url(./assets/Desktop-images/illustration-about-me-2-desktop.png) no-repeat
-        left bottom;
+      left bottom;
     flex-direction: column;
     height: 410px;
   }
-  .about-me-description > p {
-    width: 60%;
+
+  /* footer-desktop */
+  footer > p {
+    display: none;
+  }
+
+  hr {
+    background-color: #dfe1e6;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .get-in-touch {
@@ -517,27 +539,16 @@ footer > .social-links {
     grid-template-columns: repeat(12, 1fr);
     width: 100%;
     height: 80vh;
-
-    background: url(./assets/Desktop-images/contact\ form-illustratoin-3-desktop.svg)
-        no-repeat right bottom,
+    background:
+      url(./assets/Desktop-images/contact\ form-illustratoin-3-desktop.svg)
+      no-repeat right bottom,
       url(./assets/Desktop-images/illustration-1-contact-form-desktop.svg)
-        no-repeat left bottom,
+      no-repeat left bottom,
       url(./assets/Desktop-images/illustration-2-contact-form-desktop.svg)
-        no-repeat 30% bottom;
+      no-repeat 30% bottom;
   }
 
-  /* footer-desktop */
-  footer > p {
-    display: none;
-  }
-
-  footer > .social-links {
-    width: 25%;
-    justify-content: space-around;
-  }
-  hr {
-    background-color: #dfe1e6;
-    width: 100%;
-    margin-bottom: 20px;
+  .about-me-description > p {
+    width: 60%;
   }
 }
