@@ -190,7 +190,6 @@ button {
   font-weight: 500;
   font-size: 17px;
   border-radius: 4px;
-  display: block;
   padding: 12px;
   cursor: pointer;
   color: #fff;
@@ -330,6 +329,9 @@ main {
 
 
 /* contact form */
+.contact-us{
+  background: transparent;
+}
 .get-in-touch {
   width: 100vw;
   min-height: 70vh;
@@ -378,6 +380,7 @@ input:focus-visible,
 textarea:focus-visible {
   outline: #60c095 solid 1px;
 }
+
 
 /* footer */
 
@@ -430,15 +433,21 @@ footer > .social-links {
 
    .nav-desktop{
      width: 28%;
-     /* margin: 0 auto; */
 display: flex;
      position: fixed;
      right: 36%;
+     justify-content: center;
+     align-items: center;
      color:#172b4d;
+    font-size: 15px;
      top: 0;
      text-align: center;
      height: 100px;
    }
+   .nav-desktop li{
+     margin: 10px;
+   }
+
 
    .get-in-touch .intro-text {
     padding: 0 4px;
@@ -446,6 +455,14 @@ display: flex;
     height: 46%;
     margin:4% auto;
   
+  }
+  .contact-us{
+    width: 100%;
+  background:
+  url(./assets/Desktop-images/contact\ form-illustratoin-3-desktop.svg) no-repeat right
+  bottom, url(./assets/Desktop-images/illustration-1-contact-form-desktop.svg) no-repeat left
+  bottom, url(./assets/Desktop-images/illustration-2-contact-form-desktop.svg) no-repeat 30%
+  bottom;
   }
 
 
@@ -458,7 +475,42 @@ display: flex;
     font-size: 48px;
   }
 
+  .card-container{
+    display: grid;
+    width: 76vw;
+    margin: auto;
+    grid-template: auto auto / auto auto auto;
+    grid-gap: 20px;
+  }
+.card-work{
+  margin:0;
+  height: 474px;
 
+}
+.get-in-touch{
+  width: 76vw;
+  margin: 0 auto;
+}
+
+
+.second-name-input{
+  display:inline;
+margin-right: 0;
+}
+.desktop-view-input{
+display: flex;
+width: 98%;
+}
+
+.desktop-view-input > input{
+  width: 48%;
+  margin-left: 0;
+
+}
+
+#logo{
+  display: none;
+}
 
   .next-page{
     margin-top: 10%;
@@ -482,15 +534,22 @@ display: flex;
     display: flex;
     align-items: flex-start;
     height: 100vh;
-    background:
-    url(./assets/Desktop-images/contact\ form-illustratoin-3-desktop.svg) no-repeat right
-    bottom, url(./assets/Desktop-images/illustration-1-contact-form-desktop.svg) no-repeat left
-    bottom, url(./assets/Desktop-images/illustration-2-contact-form-desktop.svg) no-repeat 30%
-    bottom;
+   background: transparent;
   
   }
+
+
+  /* footer-desktop */
+  footer > p {
+    display: none;
   
- 
+  }
+
+footer > .social-links {
+  width: 25%;
+  justify-content: space-around;
+
+}
 
   
 }
