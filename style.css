@@ -52,8 +52,7 @@ p {
 }
 
 .welcome-header-text {
-  /* max-width: 76%; */
-  padding-top: 40px;
+  padding-top: 24%;
   text-align: center;
   margin: 0 auto;
 }
@@ -71,9 +70,6 @@ p {
 }
 
 ul > li {
-  margin: auto;
-  display: flex;
-  justify-content: center;
   list-style: none;
 }
 
@@ -117,6 +113,10 @@ ul > li {
   margin: auto;
   top: 30%;
   font-size: 28px;
+}
+
+.nav-desktop {
+  display: none;
 }
 
 header {
@@ -191,7 +191,6 @@ button {
   font-weight: 500;
   font-size: 17px;
   border-radius: 4px;
-  display: block;
   padding: 12px;
   cursor: pointer;
   color: #fff;
@@ -330,6 +329,10 @@ main {
 }
 
 /* contact form */
+.contact-us {
+  background: transparent;
+}
+
 .get-in-touch {
   width: 100vw;
   min-height: 70vh;
@@ -349,6 +352,10 @@ input {
   height: 48px;
 }
 
+.second-name-input {
+  display: none;
+}
+
 input,
 textarea {
   width: 98%;
@@ -361,9 +368,10 @@ textarea {
 
 .get-in-touch > .intro-text {
   color: #172b4d;
-  font-size: 40px;
+  font-size: 30px;
   font-style: normal;
-  font-weight: 700;
+  line-height: 46px;
+  text-align: center;
   padding: 0 4px;
 }
 
@@ -388,5 +396,183 @@ footer {
 }
 
 footer > .social-links {
-  width: 60%;
+  width: 70%;
+}
+
+/* desktop view starts here */
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url(./assets/Desktop-images/Header-llustration-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  /* Nav bar */
+
+  .nav-mobile {
+    display: none;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .nav-desktop {
+    width: 28%;
+    display: flex;
+    position: fixed;
+    right: 36%;
+    justify-content: center;
+    align-items: center;
+    color: #172b4d;
+    font-size: 15px;
+    font-weight: 600;
+    top: 0;
+    text-align: center;
+    height: 100px;
+  }
+
+  .nav-desktop li {
+    margin: 10px;
+  }
+
+  .get-in-touch > .intro-text {
+    padding: 0 4px;
+    grid-column: 2 / span 4;
+    font-style: normal;
+    width: 80%;
+    height: auto;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .get-in-touch > .intro-text > h3 {
+    width: 100%;
+    margin: 20% 14% 10px 0;
+    font-size: 22px;
+  }
+
+  .work-section-title {
+    height: 221px;
+  }
+
+  .second-header {
+    font-size: 48px;
+  }
+
+  form {
+    margin: 0;
+    width: 96%;
+    grid-column: 6 / span 6;
+  }
+
+  .welcome-section {
+    background: transparent;
+    display: flex;
+    flex-flow: column wrap;
+    width: 76vw;
+    margin: 15% auto 0 auto;
+  }
+
+  /* footer-desktop */
+  footer > p {
+    display: none;
+  }
+
+  .welcome-section p {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .welcome-header-text {
+    margin-bottom: 24px;
+    width: 920px;
+    padding-top: 0;
+  }
+
+  .work-section {
+    width: 100%;
+  }
+
+  footer > .social-links {
+    width: 25%;
+    justify-content: space-around;
+  }
+
+  .welcome-section .social-links {
+    width: 200px;
+  }
+
+  .card-container {
+    display: grid;
+    width: 76%;
+    margin: 0 auto;
+    grid-template: auto auto / repeat(3, 1fr);
+    justify-items: center;
+    grid-gap: 10px;
+  }
+
+  .card-work {
+    margin: 0;
+    height: 474px;
+  }
+
+  .second-name-input {
+    display: inline;
+    margin-right: 0;
+  }
+
+  .desktop-view-input {
+    display: flex;
+    width: 98%;
+  }
+
+  .desktop-view-input > input {
+    width: 48%;
+    margin-left: 0;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  .next-page {
+    margin-top: 10%;
+  }
+
+  .about-me-description {
+    background:
+      url(./assets/Desktop-images/illustration-about-me-1-desktop.svg)
+      no-repeat right top,
+      url(./assets/Desktop-images/illustration-about-me-2-desktop.png) no-repeat
+      left bottom;
+    flex-direction: column;
+    height: 410px;
+  }
+
+  hr {
+    background-color: #dfe1e6;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .get-in-touch {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    height: 80vh;
+    background:
+      url(./assets/Desktop-images/contact\ form-illustratoin-3-desktop.svg)
+      no-repeat right bottom,
+      url(./assets/Desktop-images/illustration-1-contact-form-desktop.svg)
+      no-repeat left bottom,
+      url(./assets/Desktop-images/illustration-2-contact-form-desktop.svg)
+      no-repeat 30% bottom;
+  }
+
+  .about-me-description > p {
+    width: 60%;
+  }
 }
