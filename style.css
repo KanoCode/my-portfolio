@@ -52,7 +52,7 @@ p {
 }
 
 .welcome-header-text {
-  padding-top: 40px;
+  padding-top: 24%;
   text-align: center;
   margin: 0 auto;
 }
@@ -473,6 +473,7 @@ footer > .social-links {
   .welcome-header-text {
     margin-bottom: 24px;
     width: 920px;
+    padding-top: 0;
   }
 
   .work-section {
