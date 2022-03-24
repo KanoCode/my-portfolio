@@ -486,6 +486,7 @@ footer > .social-links {
   .welcome-header-text {
     margin-bottom: 24px;
     width: 920px;
+    height: 100px;
     padding-top: 0;
   }
 
@@ -510,7 +511,21 @@ footer > .social-links {
     justify-items: center;
     grid-gap: 10px;
   }
-
+  .second-header {
+    animation: font-grow;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes font-grow {
+    from {
+      font-size: 40px;
+    }
+    to {
+      font-size: 48px;
+    }
+  }
 
   .card-work {
     margin: 0;
