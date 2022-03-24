@@ -316,10 +316,11 @@ main {
 }
 
 .about-me-description {
-  background: url(./assets/mobile-images/bg-image-mobile-about-me.png) no-repeat
-      right top,
+  background:
+    url(./assets/mobile-images/bg-image-mobile-about-me.png) no-repeat
+    right top,
     url(./assets/mobile-images/illustration-about-me-mobile.svg) no-repeat left
-      bottom;
+    bottom;
   flex-direction: column;
   height: 510px;
   display: flex;
@@ -335,7 +336,8 @@ main {
 .get-in-touch {
   width: 100vw;
   min-height: 70vh;
-  background: url(./assets/mobile-images/illustration-contact-form.svg)
+  background:
+    url(./assets/mobile-images/illustration-contact-form.svg)
     no-repeat bottom right;
 }
 
@@ -411,6 +413,7 @@ footer > .social-links {
   .nav-mobile {
     display: none;
   }
+
   h1 {
     font-size: 40px;
   }
@@ -438,7 +441,7 @@ footer > .social-links {
     padding: 0 4px;
     height: 48%;
     margin: 20px 0 auto 0;
-    grid-column: 2/span 4;
+    grid-column: 2 / span 4;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -451,6 +454,7 @@ footer > .social-links {
   .work-section-title {
     height: 221px;
   }
+
   .second-header {
     font-size: 48px;
   }
@@ -468,6 +472,12 @@ footer > .social-links {
     width: 76vw;
     margin: 15% auto 0 auto;
   }
+
+  /* footer-desktop */
+  footer > p {
+    display: none;
+  }
+
   .welcome-section p {
     width: 90%;
     margin: 0 auto;
@@ -482,9 +492,16 @@ footer > .social-links {
   .work-section {
     width: 100%;
   }
+
+  footer > .social-links {
+    width: 25%;
+    justify-content: space-around;
+  }
+
   .welcome-section .social-links {
     width: 200px;
   }
+
   .card-container {
     display: grid;
     width: 76%;
@@ -522,27 +539,14 @@ footer > .social-links {
     margin-top: 10%;
   }
 
-  footer > .social-links {
-    width: 25%;
-    justify-content: space-around;
-  }
-
-  .welcome-section .social-links {
-    width: 200px;
-  }
-
   .about-me-description {
-    background: url(./assets/Desktop-images/illustration-about-me-1-desktop.svg)
-        no-repeat right top,
+    background:
+      url(./assets/Desktop-images/illustration-about-me-1-desktop.svg)
+      no-repeat right top,
       url(./assets/Desktop-images/illustration-about-me-2-desktop.png) no-repeat
-        left bottom;
+      left bottom;
     flex-direction: column;
     height: 410px;
-  }
-
-  /* footer-desktop */
-  footer > p {
-    display: none;
   }
 
   hr {
@@ -557,12 +561,13 @@ footer > .social-links {
     grid-template-columns: repeat(12, 1fr);
     width: 100%;
     height: 80vh;
-    background: url(./assets/Desktop-images/contact\ form-illustratoin-3-desktop.svg)
-        no-repeat right bottom,
+    background:
+      url(./assets/Desktop-images/contact\ form-illustratoin-3-desktop.svg)
+      no-repeat right bottom,
       url(./assets/Desktop-images/illustration-1-contact-form-desktop.svg)
-        no-repeat left bottom,
+      no-repeat left bottom,
       url(./assets/Desktop-images/illustration-2-contact-form-desktop.svg)
-        no-repeat 30% bottom;
+      no-repeat 30% bottom;
   }
 
   .about-me-description > p {
