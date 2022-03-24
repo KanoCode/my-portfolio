@@ -21,28 +21,20 @@
     />
     <link rel="icon" href="./assets/coding.png" type="image/x-icon" />
   </head>
+  <body>
     <header>
       <a id="logo" href="#">Welcome</a>
-<ul class="nav-desktop">
-  <li>Portfolio</li>
-  <li>About</li>
-  <li>Contact</li>
-  
-</ul>
-  
+      <ul class="nav-desktop">
+        <li>Portfolio</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
 
       <div class="nav-mobile">
         <nav class="btn"><i class="fa-solid fa-bars"></i></nav>
       </div>
     </header>
 
-    
-
-
-
-
-
-    
     <section class="welcome-section">
       <div class="welcome-header-text">
         <h1>Hey there. I'm Kano</h1>
@@ -253,68 +245,87 @@
         </ul>
       </section>
       <section class="contact-us get-in-touch">
-        
-      <div class="intro-text"> <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3></div> 
-<form action="https://formspree.io/f/mpzblelz" method="post">
+        <div class="intro-text">
+          <h3>
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </h3>
+        </div>
+        <form action="https://formspree.io/f/mpzblelz" method="post">
+          <ul>
+            <li class="desktop-view-input">
+              <input
+                type="text"
+                required
+                placeholder="First Name"
+                maxlength="30"
+                name="user_name"
+              />
 
-<ul>
-<li class="desktop-view-input">
+              <input
+                type="text"
+                class="second-name-input"
+                required
+                placeholder="Last Name"
+                maxlength="30"
+                name="user_name"
+              />
+            </li>
+            <li>
+              <input
+                required
+                type="email"
+                placeholder="Email address"
+                name="user_email"
+              />
+            </li>
 
-    <input type="text" required placeholder="First Name" maxlength="30" name="user_name">
-    
-    
-      <input type="text" class="second-name-input" required placeholder="Last Name" maxlength="30" name="user_name">
-      
-      
-
-</li>
-<li>
-  <input required type="email" placeholder="Email address" name="user_email" >
-</li>
-
-
-<li>
-  <textarea name="user_message" maxlength="500" required id="message" cols="30" rows="10">Enter text here</textarea>
-</li>
-<li><button type="submit">Get in Touch</button></li>
-</ul>
-
-</form>
-
-
+            <li>
+              <textarea
+                name="user_message"
+                maxlength="500"
+                required
+                id="message"
+                cols="30"
+                rows="10"
+              >
+Enter text here</textarea
+              >
+            </li>
+            <li><button type="submit">Get in Touch</button></li>
+          </ul>
+        </form>
       </section>
-     
     </main>
-    
+
     <!-- footer section -->
     <footer>
+      <hr />
 
-<hr>
-
-<ul class="social-links">
-  <li>
-    <i class="fa-brands fa-twitter"></i>
-  </li>
-  <li>
-    <i class="fa-brands fa-linkedin-in"></i>
-  </li>
-  <li>
-    <img
-      src="./assets/social-media/medium.svg"
-      alt="Medium social media icon "
-    />
-  </li>
-  <li>
-    <img
-      src="./assets/social-media/github.svg"
-      alt="github social media icon "
-    />
-  </li>
-  <li>
-    <i class="fa-brands fa-angellist"></i>
-  </li>
-</ul>
-<p>myemailhere@email.com</p>
+      <ul class="social-links">
+        <li>
+          <i class="fa-brands fa-twitter"></i>
+        </li>
+        <li>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </li>
+        <li>
+          <img
+            src="./assets/social-media/medium.svg"
+            alt="Medium social media icon "
+          />
+        </li>
+        <li>
+          <img
+            src="./assets/social-media/github.svg"
+            alt="github social media icon "
+          />
+        </li>
+        <li>
+          <i class="fa-brands fa-angellist"></i>
+        </li>
+      </ul>
+      <p>myemailhere@email.com</p>
     </footer>
   </body>
 </html>
