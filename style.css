@@ -368,7 +368,8 @@ textarea {
   color: #172b4d;
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
   padding: 0 4px;
 }
 
@@ -435,9 +436,11 @@ footer > .social-links {
 
   .get-in-touch > .intro-text {
     padding: 0 4px;
-    height: 66%;
-    margin: 40px 0 auto 0;
-    grid-column: 2/6;
+    height: 48%;
+    margin: 20px 0 auto 0;
+    grid-column: 2/span 4;
+    font-style: normal;
+    font-weight: 700;
     font-size: 30px;
   }
 
