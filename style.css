@@ -316,10 +316,11 @@ main {
 }
 
 .about-me-description {
-  background: url(./assets/mobile-images/bg-image-mobile-about-me.png) no-repeat
-      right top,
+  background:
+    url(./assets/mobile-images/bg-image-mobile-about-me.png) no-repeat
+    right top,
     url(./assets/mobile-images/illustration-about-me-mobile.svg) no-repeat left
-      bottom;
+    bottom;
   flex-direction: column;
   height: 510px;
   display: flex;
@@ -335,7 +336,8 @@ main {
 .get-in-touch {
   width: 100vw;
   min-height: 70vh;
-  background: url(./assets/mobile-images/illustration-contact-form.svg)
+  background:
+    url(./assets/mobile-images/illustration-contact-form.svg)
     no-repeat bottom right;
 }
 
@@ -540,10 +542,11 @@ footer > .social-links {
   }
 
   .about-me-description {
-    background: url(./assets/Desktop-images/illustration-about-me-1-desktop.svg)
-        no-repeat right top,
+    background:
+      url(./assets/Desktop-images/illustration-about-me-1-desktop.svg)
+      no-repeat right top,
       url(./assets/Desktop-images/illustration-about-me-2-desktop.png) no-repeat
-        left bottom;
+      left bottom;
     flex-direction: column;
     height: 410px;
   }
@@ -560,12 +563,13 @@ footer > .social-links {
     grid-template-columns: repeat(12, 1fr);
     width: 100%;
     height: 80vh;
-    background: url(./assets/Desktop-images/contact\ form-illustratoin-3-desktop.svg)
-        no-repeat right bottom,
+    background:
+      url(./assets/Desktop-images/contact\ form-illustratoin-3-desktop.svg)
+      no-repeat right bottom,
       url(./assets/Desktop-images/illustration-1-contact-form-desktop.svg)
-        no-repeat left bottom,
+      no-repeat left bottom,
       url(./assets/Desktop-images/illustration-2-contact-form-desktop.svg)
-        no-repeat 30% bottom;
+      no-repeat 30% bottom;
   }
 
   .about-me-description > p {
