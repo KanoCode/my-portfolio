@@ -458,7 +458,21 @@ footer > .social-links {
   }
 
   .second-header {
-    font-size: 48px;
+    animation: font-grow;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes font-grow {
+    from {
+      font-size: 40px;
+    }
+
+    to {
+      font-size: 48px;
+    }
   }
 
   form {
@@ -488,6 +502,7 @@ footer > .social-links {
   .welcome-header-text {
     margin-bottom: 24px;
     width: 920px;
+    height: 100px;
     padding-top: 0;
   }
 
@@ -516,6 +531,12 @@ footer > .social-links {
   .card-work {
     margin: 0;
     height: 474px;
+    cursor: pointer;
+  }
+
+  .card-work:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-out;
   }
 
   .second-name-input {
