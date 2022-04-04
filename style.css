@@ -107,9 +107,10 @@ ul > li {
   display: flex;
 }
 .active-header {
-  height: 100vh;
+  height: 104vh;
   width: 100%;
-  background-color: #fff;
+  background-color:#e5e5e5;
+  z-index: 66;
 }
 .active-header #logo {
   display: none;
@@ -129,6 +130,15 @@ ul > li {
   width: 90%;
   font-weight: 500;
   color: #3a4a42;
+}
+.active-header .overlay{
+  width: 100vw;
+  position: fixed;
+  top: -5%;
+  z-index: -233;
+  border-radius: 5% 5%;
+  height: 100vh;
+  background-color: #fff;
 }
 .nav-mobile > nav > i {
   position: relative;
