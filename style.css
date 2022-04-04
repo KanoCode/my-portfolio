@@ -123,12 +123,16 @@ ul > li {
   flex-direction: column;
   justify-content: space-around;
   font-size: 32px;
-
+list-style-type: none;
   height: 37%;
   margin: 0 auto;
 
   width: 90%;
   font-weight: 500;
+  
+}
+.active-header a{
+  text-decoration: none;
   color: #3a4a42;
 }
 .active-header .overlay{
