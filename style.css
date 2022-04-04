@@ -122,7 +122,11 @@ ul > li {
   flex-direction: column;
   justify-content: space-around;
   font-size: 32px;
-  height: 25%;
+
+  height: 37%;
+  margin: 0 auto;
+
+  width: 90%;
   font-weight: 500;
   color: #3a4a42;
 }
