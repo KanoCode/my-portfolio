@@ -22,20 +22,22 @@
     <link rel="icon" href="./assets/coding.png" type="image/x-icon" />
   </head>
   <body>
-    <header>
+    <header class="">
+     
       <a id="logo" href="#">Welcome</a>
       <ul class="nav-desktop">
-        <li>Portfolio</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li><a href="#work">Portfolio</a></li>
+       <li> <a href="#about">About</a> </li>
+        <li> <a href="#contact">Contact</a></li>
       </ul>
 
       <div class="nav-mobile">
         <nav class="btn"><i class="fa-solid fa-bars"></i></nav>
       </div>
+      <span class="overlay"></span>
     </header>
 
-    <section class="welcome-section">
+    <section id="home" class="welcome-section">
       <div class="welcome-header-text">
         <h1>Hey there. I'm Kano</h1>
         <h2 class="second-header">I am a software developer</h2>
@@ -79,7 +81,7 @@
       </div>
     </section>
     <main>
-      <section class="work-section">
+      <section id="work" class="work-section">
         <div class="work-section-title">
           <h2>My Recent Works</h2>
           <span></span>
@@ -177,7 +179,7 @@
           </div>
         </div>
       </section>
-      <section class="about-me">
+      <section id="about"  class="about-me">
         <div class="about-me-description">
           <h2>About me</h2>
           <p class="intro-text">
@@ -244,7 +246,7 @@
           </li>
         </ul>
       </section>
-      <section class="contact-us get-in-touch">
+      <section id="contact" class="contact-us get-in-touch">
         <div class="intro-text">
           <h3>
             I'm always interested in hearing about new projects, so if you'd
@@ -327,5 +329,6 @@ Enter text here</textarea
       </ul>
       <p>myemailhere@email.com</p>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>

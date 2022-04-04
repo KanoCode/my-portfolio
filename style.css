@@ -17,6 +17,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
 /* welcome section */
@@ -96,6 +98,10 @@ ul > li {
   margin: 80px auto;
 }
 
+.nav-desktop {
+  display: none;
+}
+
 .nav-mobile {
   position: fixed;
   right: 29px;
@@ -107,16 +113,51 @@ ul > li {
   display: flex;
 }
 
+.active-header {
+  height: 104vh;
+  width: 100%;
+  background-color: #e5e5e5;
+  z-index: 66;
+}
+
+.active-header #logo {
+  display: none;
+}
+
+.active-header .nav-desktop {
+  position: relative;
+  top: 16%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 32px;
+  height: 37%;
+  margin: 0 auto;
+  width: 90%;
+  font-weight: 500;
+}
+
+.active-header a {
+  text-decoration: none;
+  color: #3a4a42;
+}
+
+.active-header .overlay {
+  width: 100%;
+  position: fixed;
+  top: -5%;
+  z-index: -3;
+  border-radius: 5% 5%;
+  height: 100vh;
+  background-color: #fff;
+}
+
 .nav-mobile > nav > i {
   position: relative;
   color: #28352f;
   margin: auto;
   top: 30%;
   font-size: 28px;
-}
-
-.nav-desktop {
-  display: none;
 }
 
 header {
@@ -418,6 +459,10 @@ footer > .social-links {
     font-size: 40px;
   }
 
+  .active-header {
+    display: none;
+  }
+
   .nav-desktop {
     width: 28%;
     display: flex;
@@ -425,12 +470,15 @@ footer > .social-links {
     right: 36%;
     justify-content: center;
     align-items: center;
-    color: #172b4d;
     font-size: 15px;
     font-weight: 600;
     top: 0;
     text-align: center;
     height: 100px;
+  }
+
+  a {
+    color: #172b4d;
   }
 
   .nav-desktop li {
