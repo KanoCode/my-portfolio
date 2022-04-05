@@ -286,15 +286,15 @@ button:hover {
 
 /* Pop up mobile */
 
-.popup{
+.popup {
   display: none;
 }
 .active {
   background-color: #c1c7d0;
   width: 100%;
-display: block;
+  display: block;
   height: 130vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 110;

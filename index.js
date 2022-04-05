@@ -94,7 +94,15 @@ cardContainer.appendChild(template);
 }) 
 
 //create popup 
+const cardButtons = document.querySelectorAll(".see-project") 
+const activePopUp = document.querySelector(".pop-up");
 
+// console.log(activePopUp.innerHTML)
+cardButtons.forEach(btn => {
+btn.addEventListener('click',function(){
+activePopUp.classList.toggle("active")
+})
+}) 
 
 
 
