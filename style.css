@@ -293,14 +293,15 @@ button:hover {
   background-color: #c1c7d0;
   width: 100%;
   display: block;
-  height: 130vh;
+  height: 100%;
   position: fixed;
+  overflow:auto;
   top: 0;
   left: 0;
-  z-index: 110;
+  z-index: 1110;
 }
 .active > div {
-  width: 96%;
+  width: 86%;
   height: 126vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -344,13 +345,22 @@ button:hover {
 }
 .popup-container .project-btns {
   grid-column: 1/13;
-  width: 96%;
+  width: 93%;
   display: flex;
   justify-content: space-between;
-  margin: 10px auto;
+  margin: 10px;
 }
 .project-btns > button {
   margin: 0;
+}
+
+.popUp > i{
+  position: absolute;
+  top: 3%;
+  right: 17%;
+  color: #fff;
+font-size: 32px;
+cursor: pointer;
 }
 
 /* About section */
@@ -712,4 +722,86 @@ footer > .social-links {
   .about-me-description > p {
     width: 60%;
   }
+
+  /* pop up desktop */
+
+  .active {
+    background-color: #c1c7d0;
+    width: 100%;
+    display: block;
+    height: 100%;
+    position: fixed;
+    overflow:auto;
+    top: 0;
+    left: 0;
+    z-index: 1110;
+  }
+  
+  .active > div {
+    width: 90%;
+    height: 126vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background-color: #fff;
+    margin: auto;
+    border-radius: 16px;
+  }
+  .popup-container > .imgPlaceholder {
+    grid-column: 2/13;
+    border: solid;
+    width: 90%;
+    order: 1;
+  }
+  .imgPlaceholder > img {
+    width: 100%;
+  }
+  
+  .popup-container > h3 {
+    grid-column: 2/span 4;
+    order: 2;
+    font-size: 32px;
+    text-align: start;
+  
+    margin: 10px;
+  }
+  .popup-container > ul {
+    grid-column: 2/span 12;
+    font-size: 12px;
+  order: 4;
+    width: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  .popup-container > p {
+    grid-column: 2/span 12;
+    width: 90%;
+    order: 5;
+    text-align: start;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  .popup-container .project-btns {
+    grid-column: span 5;
+    width: 94%;
+    order: 3;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  .project-btns > button {
+    margin: 0;
+  }
+  
+  
+  
+  
+  
+
+
+
+  
+
 }

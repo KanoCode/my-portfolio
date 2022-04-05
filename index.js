@@ -2,78 +2,164 @@
 
 // hamburger menu
 
-const navBtn = document.querySelector('.nav-mobile > .btn');
-const activeHeader = document.querySelector('header');
-const navUl = document.querySelectorAll('.nav-desktop li');
+const navBtn = document.querySelector(".nav-mobile > .btn");
+const activeHeader = document.querySelector("header");
+const navUl = document.querySelectorAll(".nav-desktop li");
 
-const barsBtn = document.querySelector('.btn > .fa-solid');
+const barsBtn = document.querySelector(".btn > .fa-solid");
 
 // event handler
 function showHiddenMenu() {
-  if (activeHeader.classList.contains('active-header')) {
-    activeHeader.classList.remove('active-header');
-    barsBtn.classList.replace('fa-times', 'fa-bars');
+  if (activeHeader.classList.contains("active-header")) {
+    activeHeader.classList.remove("active-header");
+    barsBtn.classList.replace("fa-times", "fa-bars");
   } else {
-    activeHeader.classList.add('active-header');
-    barsBtn.classList.replace('fa-bars', 'fa-times');
+    activeHeader.classList.add("active-header");
+    barsBtn.classList.replace("fa-bars", "fa-times");
   }
 }
 
 // register event handler
 navUl.forEach((a) => {
-  a.addEventListener('click', () => {
-    activeHeader.classList.remove('active-header');
-    barsBtn.classList.replace('fa-times', 'fa-bars');
+  a.addEventListener("click", () => {
+    activeHeader.classList.remove("active-header");
+    barsBtn.classList.replace("fa-times", "fa-bars");
   });
 });
 
-navBtn.addEventListener('click', showHiddenMenu);
-
+navBtn.addEventListener("click", showHiddenMenu);
 
 // Generate card content dynamically
 
-
 const cardsObj = [
+  {
+    title: "Multi-Post Stories Gain+Glory",
+    technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"],
+    projectBtn: "See Project",
+  },
+  {
+    title: "Multi-Post Stories Gain+Glory",
+    technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"],
+    projectBtn: "See Project",
+  },
+  {
+    title: "Multi-Post Stories Gain+Glory",
+    technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"],
+    projectBtn: "See Project",
+  },
+  {
+    title: "Multi-Post Stories Gain+Glory",
+    technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"],
+    projectBtn: "See Project",
+  },
+  {
+    title: "Multi-Post Stories Gain+Glory",
+    technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"],
+    projectBtn: "See Project",
+  },
+  {
+    title: "Multi-Post Stories Gain+Glory",
+    technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"],
+    projectBtn: "See Project",
+  },
+];
 
-{
-  title: "Multi-Post Stories Gain+Glory",
-  technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"]
-  ,projectBtn : "See Project",
-}
-,{
-  title: "Multi-Post Stories Gain+Glory",
-  technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"]
-  ,projectBtn : "See Project",
-},{
-  title: "Multi-Post Stories Gain+Glory",
-  technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"]
-  ,projectBtn : "See Project",
+let popupData = {
+  postTitle: "Keeping track of hundreds ofcomponents",
+  description:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+  popupImageUrlDesktop:
+    "./assets/Desktop-images/Container/Snapshoot Portfolio.png",
+  popupImageUrlMobile: "./assets/mobile-images/pop-up-mobile.png",
+  technologiesPopup: [
+    "Ruby on rails",
+    "CSS",
+    "html",
+    "Github",
+    "Bootstrap",
+    "terminal",
+    "Codepen",
+  ],
+  linkLive: "https://butlermuwo.github.io/Portfolio/",
+  linkSource: "https://butlermuwo.github.io/Portfolio/",
+};
 
-},{
-  title: "Multi-Post Stories Gain+Glory",
-  technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"]
-  ,projectBtn : "See Project",
-},{
-  title: "Multi-Post Stories Gain+Glory",
-  technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"]
-  ,projectBtn : "See Project",
-},{
-  title: "Multi-Post Stories Gain+Glory",
-  technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"]
-  ,projectBtn : "See Project",
-},
-]
+;
 
-//get card container
+let template = document.createElement("template");
+let makeLi = popupData.technologiesPopup.map((li) => `<li>${li}</li>`);
+
+let mediaQuery = window.matchMedia("(min-width:1024px)");
+
+
+
+
+
+
+const checkMediaQuery = (item1, item2) => {
+  if (mediaQuery.matches) {
+    return item1;
+  } else {
+    return item2;
+  }
+};
+
+
+window.addEventListener('change', checkMediaQuery)
+
+// console.log(unpackLi(makeLi))
+
+template.innerHTML = `<div class="popUp">
+<i class="fa-solid fa-times"></i>
+<div class="popup-container">
+  <div class="imgPlaceholder">
+    <img
+      src="${checkMediaQuery(
+        popupData.popupImageUrlDesktop,
+        popupData.popupImageUrlMobile
+      )}"
+      alt=""
+      srcset=""
+    />
+  </div>
+  <h3>${popupData.postTitle}</h3>
+  <ul class="languages">
+    ${checkMediaQuery(makeLi,makeLi.slice(0, 3))}
+  </ul>
+  <p>
+  ${popupData.description}
+  </p>
+  <div class="project-btns">
+    <button class="see-live">
+      <span>See Live</span>
+      <img
+        src="./assets/social-media/see-live-icon.svg"
+        alt=""
+        srcset=""
+      />
+    </button>
+    <button class="see-source">
+      <span>See Source</span>
+      <img src="./assets/social-media/Vector.png" alt="" srcset="" />
+    </button>
+  </div>
+</div>
+</div>
+  `;
+
+document.body.appendChild(template.content);
+
+const popUp = document.querySelector(".popUp");
+
+// //get card container
 
 const cardContainer = document.querySelector(".card-container");
 
-
 //create card
 
-const cardTemplate = cardsObj.forEach((obj)=>{
-  let template = document.createElement('ul');
-template.innerHTML = `<li class="card-work">
+const cardTemplate = cardsObj.forEach((obj) => {
+  let template = document.createElement("ul");
+  template.innerHTML = `<li class="card-work">
 <div class="img-placeholder"></div>
 <div class="card-details">
   <div class="card-description">
@@ -87,22 +173,24 @@ template.innerHTML = `<li class="card-work">
   </ul>
   <button type="button" class="see-project">${obj.projectBtn}</button>
 </div>
-</li>`
-cardContainer.appendChild(template);
+</li>`;
+  cardContainer.appendChild(template);
+});
 
+const cardButtons = document.querySelectorAll(".see-project");
 
-}) 
+cardButtons.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    popUp.classList.toggle("active");
+  });
+});
 
-//create popup 
-const cardButtons = document.querySelectorAll(".see-project") 
-const activePopUp = document.querySelector(".pop-up");
+const closeModal = document.querySelector(".popUp > i");
+closeModal.addEventListener("click", function () {
+  popUp.classList.toggle("active");
+});
 
-// console.log(activePopUp.innerHTML)
-cardButtons.forEach(btn => {
-btn.addEventListener('click',function(){
-activePopUp.classList.toggle("active")
-})
-}) 
+let mql = window.matchMedia("(max-width: 600px)");
 
-
-
+// document.querySelector(".mq-value").innerText = mql.matches;
+console.log(mql);
