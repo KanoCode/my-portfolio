@@ -293,7 +293,7 @@ button:hover {
   background-color: #c1c7d0;
   width: 100%;
 display: block;
-  height: 100vh;
+  height: 130vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -301,7 +301,7 @@ display: block;
 }
 .active > div {
   width: 96%;
-  height: 98vh;
+  height: 126vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
