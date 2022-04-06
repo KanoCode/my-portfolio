@@ -390,6 +390,14 @@ button:hover {
   margin: 0;
 }
 
+.see-live a {
+  color: #fff;
+}
+
+.see-source a {
+  color: #fff;
+}
+
 .popup-container ul > li:nth-child(n + 4) {
   display: none;
 }

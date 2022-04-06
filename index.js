@@ -80,8 +80,8 @@ const popupData = {
     'terminal',
     'Codepen',
   ],
-  linkLive: 'https://butlermuwo.github.io/Portfolio/',
-  linkSource: 'https://butlermuwo.github.io/Portfolio/',
+  linkLive: 'https://kanocode.github.io/my-portfolio/',
+  linkSource: 'https://github.com/KanoCode/my-portfolio',
 };
 
 const template = document.createElement('template');
@@ -96,9 +96,7 @@ template.innerHTML = `<div class="popUp">
 <div class="icon"> <i class="fa-solid fa-times"></i> </div>
   <div class="imgPlaceholder">
     <img
-      src="${
-  popupData.popupImageUrlDesktop
-}"
+      src="${popupData.popupImageUrlDesktop}"
       alt=""
       srcset=""
     />
@@ -112,7 +110,7 @@ template.innerHTML = `<div class="popUp">
   </p>
   <div class="project-btns">
     <button class="see-live">
-      <span>See Live</span>
+      <a href="${popupData.linkLive}" target="blank">See Live</a>
       <img
         src="./assets/social-media/see-live-icon.svg"
         alt=""
@@ -120,7 +118,7 @@ template.innerHTML = `<div class="popUp">
       />
     </button>
     <button class="see-source">
-      <span>See Source</span>
+      <a href="${popupData.linkSource}" target="blank">See Source</a>
       <img src="./assets/social-media/Vector.png" alt="" srcset="" />
     </button>
   </div>
