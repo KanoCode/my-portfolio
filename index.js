@@ -64,7 +64,7 @@ const cardsObj = [
   },
 ];
 
-let popupData = {
+const popupData = {
   postTitle: "Keeping track of hundreds ofcomponents",
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
@@ -84,47 +84,29 @@ let popupData = {
   linkSource: "https://butlermuwo.github.io/Portfolio/",
 };
 
-;
-
 let template = document.createElement("template");
-let makeLi = popupData.technologiesPopup.map((li) => `<li>${li}</li>`);
-
-let mediaQuery = window.matchMedia("(min-width:1024px)");
-
-
-
+let techStack = "";
+let makeLi = popupData.technologiesPopup.forEach((li) => {
+  techStack += `<li>${li}</li>`;
+});
 
 
-
-const checkMediaQuery = (item1, item2) => {
-  if (mediaQuery.matches) {
-    return item1;
-  } else {
-    return item2;
-  }
-};
-
-
-window.addEventListener('change', checkMediaQuery)
-
-// console.log(unpackLi(makeLi))
-
-template.innerHTML = `<div class="popUp">
-<i class="fa-solid fa-times"></i>
+  template.innerHTML = `<div class="popUp">
+  
 <div class="popup-container">
+<div class="icon"> <i class="fa-solid fa-times"></i> </div>
   <div class="imgPlaceholder">
     <img
-      src="${checkMediaQuery(
-        popupData.popupImageUrlDesktop,
-        popupData.popupImageUrlMobile
-      )}"
+      src="${
+        popupData.popupImageUrlDesktop
+      }"
       alt=""
       srcset=""
     />
   </div>
   <h3>${popupData.postTitle}</h3>
   <ul class="languages">
-    ${checkMediaQuery(makeLi,makeLi.slice(0, 3))}
+    ${techStack}
   </ul>
   <p>
   ${popupData.description}
@@ -147,7 +129,10 @@ template.innerHTML = `<div class="popUp">
 </div>
   `;
 
-document.body.appendChild(template.content);
+  document.body.appendChild(template.content);
+
+
+
 
 const popUp = document.querySelector(".popUp");
 
@@ -185,12 +170,8 @@ cardButtons.forEach((btn) => {
   });
 });
 
-const closeModal = document.querySelector(".popUp > i");
+const closeModal = document.querySelector(".icon > i");
 closeModal.addEventListener("click", function () {
   popUp.classList.toggle("active");
+  
 });
-
-let mql = window.matchMedia("(max-width: 600px)");
-
-// document.querySelector(".mq-value").innerText = mql.matches;
-console.log(mql);

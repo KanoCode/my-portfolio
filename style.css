@@ -295,14 +295,15 @@ button:hover {
   display: block;
   height: 100%;
   position: fixed;
-  overflow:auto;
+  overflow: auto;
   top: 0;
   left: 0;
   z-index: 1110;
 }
 .active > div {
   width: 86%;
-  height: 126vh;
+  margin-top: 10%;
+  height: 130vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
@@ -329,7 +330,6 @@ button:hover {
 .popup-container > ul {
   grid-column: span 12;
   font-size: 12px;
-
   width: 88%;
   display: flex;
   align-items: center;
@@ -353,14 +353,34 @@ button:hover {
 .project-btns > button {
   margin: 0;
 }
-
-.popUp > i{
+.popup-container ul > li:nth-child(n + 4) {
+  display: none;
+}
+.popUp > i {
   position: absolute;
   top: 3%;
   right: 17%;
   color: #fff;
-font-size: 32px;
-cursor: pointer;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.popup-container .icon {
+  width: 5%;
+  height: 6%;
+  background-color: #fff;
+
+  position: fixed;
+  right: 12%;
+  top: 2%;
+  display: flex;
+  justify-content: center;
+  color: #67798e;
+  font-size: 25px;
+  cursor: pointer;
+}
+.icon i {
+  display: block;
 }
 
 /* About section */
@@ -728,80 +748,74 @@ footer > .social-links {
   .active {
     background-color: #c1c7d0;
     width: 100%;
-    display: block;
-    height: 100%;
-    position: fixed;
-    overflow:auto;
-    top: 0;
-    left: 0;
-    z-index: 1110;
   }
-  
+
   .active > div {
     width: 90%;
-    height: 126vh;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    background-color: #fff;
-    margin: auto;
-    border-radius: 16px;
+    height: 136vh;
   }
   .popup-container > .imgPlaceholder {
     grid-column: 2/13;
-    border: solid;
-    width: 90%;
     order: 1;
+    grid-row: 2 / span 7;
   }
   .imgPlaceholder > img {
     width: 100%;
+    display: block;
+    height: 100%;
   }
-  
+
   .popup-container > h3 {
-    grid-column: 2/span 4;
+    grid-column: 2 / span 5;
     order: 2;
-    font-size: 32px;
-    text-align: start;
-  
-    margin: 10px;
+    grid-row: 9 / span 1;
   }
   .popup-container > ul {
-    grid-column: 2/span 12;
+    grid-column: 2 / span 7;
     font-size: 12px;
-  order: 4;
+    font-size: 12px;
     width: 88%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px;
+    grid-row: 10 / span 1;
+    order: 4;
+    width: 88%;
   }
   .popup-container > p {
-    grid-column: 2/span 12;
+    grid-column: 2 / span 12;
     width: 90%;
     order: 5;
-    text-align: start;
-    margin-left: 10px;
-    font-size: 16px;
+    grid-row: 11 / span 3;
   }
   .popup-container .project-btns {
-    grid-column: span 5;
-    width: 94%;
+    grid-column: 9 / span 6;
+    width: 74%;
+    grid-row: 9 / span 1;
     order: 3;
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
   }
+
   .project-btns > button {
     margin: 0;
   }
-  
-  
-  
-  
-  
 
+  .popup-container ul > li:nth-child(n + 4) {
+    display: block;
+  }
+  .popup-container .icon {
+    width: 5%;
+    height: 6%;
+    background-color: #ebecf0;
 
-
-  
-
+    position: fixed;
+    right: 10%;
+    top: 4%;
+    display: flex;
+    justify-content: center;
+    color: #67798e;
+    align-items: center;
+    font-size: 32px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .icon i {
+    display: block;
+  }
 }
