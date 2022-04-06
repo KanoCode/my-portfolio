@@ -152,6 +152,35 @@ ul > li {
   background-color: #fff;
 }
 
+.popUp > i {
+  position: absolute;
+  top: 3%;
+  right: 17%;
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+/* popup icon */
+
+.popup-container .icon {
+  width: 5%;
+  height: 4%;
+  background-color: #fff;
+  position: fixed;
+  right: 12%;
+  top: 2%;
+  display: flex;
+  justify-content: center;
+  color: #67798e;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.icon i {
+  display: block;
+}
+
 .nav-mobile > nav > i {
   position: relative;
   color: #28352f;
@@ -280,6 +309,7 @@ button:hover {
   padding: 12px;
   margin: 2px;
 }
+
 .popup-container {
   display: none;
 }
@@ -289,6 +319,7 @@ button:hover {
 .popup {
   display: none;
 }
+
 .active {
   background-color: #c1c7d0;
   width: 100%;
@@ -300,22 +331,24 @@ button:hover {
   left: 0;
   z-index: 1110;
 }
+
 .active > div {
   width: 86%;
-  margin-top: 10%;
   height: 130vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   background-color: #fff;
-  margin: auto;
+  margin: 10% auto;
   border-radius: 16px;
 }
+
 .popup-container > .imgPlaceholder {
   grid-column: span 12;
   margin: 10px;
   width: 90%;
 }
+
 .imgPlaceholder > img {
   width: 100%;
 }
@@ -324,9 +357,9 @@ button:hover {
   grid-column: span 12;
   font-size: 32px;
   text-align: start;
-
   margin: 10px;
 }
+
 .popup-container > ul {
   grid-column: span 12;
   font-size: 12px;
@@ -336,6 +369,7 @@ button:hover {
   justify-content: space-between;
   margin: 10px;
 }
+
 .popup-container > p {
   grid-column: span 12;
   width: 90%;
@@ -343,6 +377,7 @@ button:hover {
   margin-left: 10px;
   font-size: 16px;
 }
+
 .popup-container .project-btns {
   grid-column: 1/13;
   width: 93%;
@@ -350,37 +385,13 @@ button:hover {
   justify-content: space-between;
   margin: 10px;
 }
+
 .project-btns > button {
   margin: 0;
 }
+
 .popup-container ul > li:nth-child(n + 4) {
   display: none;
-}
-.popUp > i {
-  position: absolute;
-  top: 3%;
-  right: 17%;
-  color: #fff;
-  font-size: 32px;
-  cursor: pointer;
-}
-
-.popup-container .icon {
-  width: 5%;
-  height: 6%;
-  background-color: #fff;
-
-  position: fixed;
-  right: 12%;
-  top: 2%;
-  display: flex;
-  justify-content: center;
-  color: #67798e;
-  font-size: 25px;
-  cursor: pointer;
-}
-.icon i {
-  display: block;
 }
 
 /* About section */
@@ -459,10 +470,11 @@ main {
 }
 
 .about-me-description {
-  background: url(./assets/mobile-images/bg-image-mobile-about-me.png) no-repeat
-      right top,
+  background:
+    url(./assets/mobile-images/bg-image-mobile-about-me.png) no-repeat
+    right top,
     url(./assets/mobile-images/illustration-about-me-mobile.svg) no-repeat left
-      bottom;
+    bottom;
   flex-direction: column;
   height: 510px;
   display: flex;
@@ -478,7 +490,8 @@ main {
 .get-in-touch {
   width: 100vw;
   min-height: 70vh;
-  background: url(./assets/mobile-images/illustration-contact-form.svg)
+  background:
+    url(./assets/mobile-images/illustration-contact-form.svg)
     no-repeat bottom right;
 }
 
@@ -593,6 +606,12 @@ footer > .social-links {
     height: auto;
     font-weight: 700;
     line-height: 30px;
+  }
+
+  .popup-container > h3 {
+    grid-column: 2 / span 5;
+    order: 2;
+    grid-row: 9 / span 1;
   }
 
   .get-in-touch > .intro-text > h3 {
@@ -711,10 +730,11 @@ footer > .social-links {
   }
 
   .about-me-description {
-    background: url(./assets/Desktop-images/illustration-about-me-1-desktop.svg)
-        no-repeat right top,
+    background:
+      url(./assets/Desktop-images/illustration-about-me-1-desktop.svg)
+      no-repeat right top,
       url(./assets/Desktop-images/illustration-about-me-2-desktop.png) no-repeat
-        left bottom;
+      left bottom;
     flex-direction: column;
     height: 410px;
   }
@@ -731,12 +751,13 @@ footer > .social-links {
     grid-template-columns: repeat(12, 1fr);
     width: 100%;
     height: 80vh;
-    background: url(./assets/Desktop-images/contact\ form-illustratoin-3-desktop.svg)
-        no-repeat right bottom,
+    background:
+      url(./assets/Desktop-images/contact\ form-illustratoin-3-desktop.svg)
+      no-repeat right bottom,
       url(./assets/Desktop-images/illustration-1-contact-form-desktop.svg)
-        no-repeat left bottom,
+      no-repeat left bottom,
       url(./assets/Desktop-images/illustration-2-contact-form-desktop.svg)
-        no-repeat 30% bottom;
+      no-repeat 30% bottom;
   }
 
   .about-me-description > p {
@@ -754,37 +775,34 @@ footer > .social-links {
     width: 90%;
     height: 136vh;
   }
+
   .popup-container > .imgPlaceholder {
     grid-column: 2/13;
     order: 1;
     grid-row: 2 / span 7;
   }
+
   .imgPlaceholder > img {
     width: 100%;
     display: block;
     height: 100%;
   }
 
-  .popup-container > h3 {
-    grid-column: 2 / span 5;
-    order: 2;
-    grid-row: 9 / span 1;
-  }
   .popup-container > ul {
     grid-column: 2 / span 7;
     font-size: 12px;
-    font-size: 12px;
-    width: 88%;
     grid-row: 10 / span 1;
     order: 4;
     width: 88%;
   }
+
   .popup-container > p {
     grid-column: 2 / span 12;
     width: 90%;
     order: 5;
     grid-row: 11 / span 3;
   }
+
   .popup-container .project-btns {
     grid-column: 9 / span 6;
     width: 74%;
@@ -799,11 +817,11 @@ footer > .social-links {
   .popup-container ul > li:nth-child(n + 4) {
     display: block;
   }
+
   .popup-container .icon {
     width: 5%;
     height: 6%;
     background-color: #ebecf0;
-
     position: fixed;
     right: 10%;
     top: 4%;
@@ -815,6 +833,7 @@ footer > .social-links {
     cursor: pointer;
     border-radius: 4px;
   }
+
   .icon i {
     display: block;
   }
