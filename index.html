@@ -165,17 +165,16 @@
           <ul>
             <li class="desktop-view-input">
               <input
+          
                 type="text"
-                required
                 placeholder="First Name"
                 maxlength="30"
                 name="user_name"
               />
 
               <input
-                type="text"
+                 type="text"
                 class="second-name-input"
-                required
                 placeholder="Last Name"
                 maxlength="30"
                 name="user_name"
@@ -183,7 +182,7 @@
             </li>
             <li>
               <input
-                required
+                id="mail"
                 type="email"
                 placeholder="Email address"
                 name="user_email"
@@ -193,14 +192,15 @@
             <li>
               <textarea
                 name="user_message"
+    
                 maxlength="500"
-                required
                 id="message"
                 cols="30"
                 rows="10"
               >
 Enter text here</textarea
               >
+              <span class="error"></span>
             </li>
             <li><button type="submit">Get in Touch</button></li>
           </ul>

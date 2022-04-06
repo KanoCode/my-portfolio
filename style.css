@@ -295,6 +295,10 @@ button:hover {
   color: var(--card-text-color);
   border-radius: 4% 4% 0 0;
 }
+/* form validation */
+.error{
+  color:#DC3545;
+}
 
 .card-description {
   width: 70%;
