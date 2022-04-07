@@ -2,90 +2,90 @@
 
 // hamburger menu
 
-const navBtn = document.querySelector('.nav-mobile > .btn');
-const activeHeader = document.querySelector('header');
-const navUl = document.querySelectorAll('.nav-desktop li');
+const navBtn = document.querySelector(".nav-mobile > .btn");
+const activeHeader = document.querySelector("header");
+const navUl = document.querySelectorAll(".nav-desktop li");
 
-const barsBtn = document.querySelector('.btn > .fa-solid');
+const barsBtn = document.querySelector(".btn > .fa-solid");
 
 // event handler
 function showHiddenMenu() {
-  if (activeHeader.classList.contains('active-header')) {
-    activeHeader.classList.remove('active-header');
-    barsBtn.classList.replace('fa-times', 'fa-bars');
+  if (activeHeader.classList.contains("active-header")) {
+    activeHeader.classList.remove("active-header");
+    barsBtn.classList.replace("fa-times", "fa-bars");
   } else {
-    activeHeader.classList.add('active-header');
-    barsBtn.classList.replace('fa-bars', 'fa-times');
+    activeHeader.classList.add("active-header");
+    barsBtn.classList.replace("fa-bars", "fa-times");
   }
 }
 
 // register event handler
 navUl.forEach((a) => {
-  a.addEventListener('click', () => {
-    activeHeader.classList.remove('active-header');
-    barsBtn.classList.replace('fa-times', 'fa-bars');
+  a.addEventListener("click", () => {
+    activeHeader.classList.remove("active-header");
+    barsBtn.classList.replace("fa-times", "fa-bars");
   });
 });
 
-navBtn.addEventListener('click', showHiddenMenu);
+navBtn.addEventListener("click", showHiddenMenu);
 
 // Generate card content dynamically
 
 const cardsObj = [
   {
-    title: 'Multi-Post Stories Gain+Glory',
-    technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
-    projectBtn: 'See Project',
+    title: "Multi-Post Stories Gain+Glory",
+    technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"],
+    projectBtn: "See Project",
   },
   {
-    title: 'Multi-Post Stories Gain+Glory',
-    technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
-    projectBtn: 'See Project',
+    title: "Multi-Post Stories Gain+Glory",
+    technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"],
+    projectBtn: "See Project",
   },
   {
-    title: 'Multi-Post Stories Gain+Glory',
-    technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
-    projectBtn: 'See Project',
+    title: "Multi-Post Stories Gain+Glory",
+    technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"],
+    projectBtn: "See Project",
   },
   {
-    title: 'Multi-Post Stories Gain+Glory',
-    technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
-    projectBtn: 'See Project',
+    title: "Multi-Post Stories Gain+Glory",
+    technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"],
+    projectBtn: "See Project",
   },
   {
-    title: 'Multi-Post Stories Gain+Glory',
-    technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
-    projectBtn: 'See Project',
+    title: "Multi-Post Stories Gain+Glory",
+    technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"],
+    projectBtn: "See Project",
   },
   {
-    title: 'Multi-Post Stories Gain+Glory',
-    technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
-    projectBtn: 'See Project',
+    title: "Multi-Post Stories Gain+Glory",
+    technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"],
+    projectBtn: "See Project",
   },
 ];
 
 const popupData = {
-  postTitle: 'Keeping track of hundreds ofcomponents',
+  postTitle: "Keeping track of hundreds ofcomponents",
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   popupImageUrlDesktop:
-    './assets/Desktop-images/Container/Snapshoot Portfolio.png',
-  popupImageUrlMobile: './assets/mobile-images/pop-up-mobile.png',
+    "./assets/Desktop-images/Container/Snapshoot Portfolio.png",
+  popupImageUrlMobile: "./assets/mobile-images/pop-up-mobile.png",
   technologiesPopup: [
-    'Ruby on rails',
-    'CSS',
-    'html',
-    'Github',
-    'Bootstrap',
-    'terminal',
-    'Codepen',
+    "Ruby on rails",
+    "CSS",
+    "html",
+    "Github",
+    "Bootstrap",
+    "terminal",
+    "Codepen",
   ],
-  linkLive: 'https://kanocode.github.io/my-portfolio/',
-  linkSource: 'https://github.com/KanoCode/my-portfolio',
+  linkLive: "https://kanocode.github.io/my-portfolio/",
+  linkSource: "https://github.com/KanoCode/my-portfolio",
 };
 
-const template = document.createElement('template');
-let techStack = '';
+const template = document.createElement("template");
+let techStack = "";
 popupData.technologiesPopup.forEach((li) => {
   techStack += `<li>${li}</li>`;
 });
@@ -128,16 +128,16 @@ template.innerHTML = `<div class="popUp">
 
 document.body.appendChild(template.content);
 
-const popUp = document.querySelector('.popUp');
+const popUp = document.querySelector(".popUp");
 
 // //get card container
 
-const cardContainer = document.querySelector('.card-container');
+const cardContainer = document.querySelector(".card-container");
 
 // create card
 
 cardsObj.forEach((obj) => {
-  const template = document.createElement('ul');
+  const template = document.createElement("ul");
   template.innerHTML = `<li class="card-work">
 <div class="img-placeholder"></div>
 <div class="card-details">
@@ -156,15 +156,46 @@ cardsObj.forEach((obj) => {
   cardContainer.appendChild(template);
 });
 
-const cardButtons = document.querySelectorAll('.see-project');
+const cardButtons = document.querySelectorAll(".see-project");
 
 cardButtons.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    popUp.classList.toggle('active');
+  btn.addEventListener("click", () => {
+    popUp.classList.toggle("active");
   });
 });
 
-const closeModal = document.querySelector('.icon > i');
-closeModal.addEventListener('click', () => {
-  popUp.classList.toggle('active');
+const closeModal = document.querySelector(".icon > i");
+closeModal.addEventListener("click", () => {
+  popUp.classList.toggle("active");
 });
+
+// Data storage
+
+const form = document
+  .querySelector("form")
+  .addEventListener("input", function () {
+    const formDataObj = {
+      firstName: document.querySelector(".first-name").value,
+      lastName: document.querySelector(".second-name-input").value,
+      email: document.querySelector(".email").value,
+      message: document.querySelector(".message").value,
+    };
+    localStorage.setItem("formData", JSON.stringify(formDataObj));
+  });
+
+function getItems() {
+  const firstName = JSON.parse(localStorage.getItem("formData"))["firstName"];
+
+  const lastName = JSON.parse(localStorage.getItem("formData"))["lastName"];
+  const email = JSON.parse(localStorage.getItem("formData"))["email"];
+  const message = JSON.parse(localStorage.getItem("formData"))["message"];
+
+  console.log(firstName, lastName, email, message);
+
+  document.querySelector(".first-name").value = firstName;
+  document.querySelector(".second-name-input").value = lastName;
+  document.querySelector(".email").value = email;
+  document.querySelector(".message").value = message;
+}
+
+window.addEventListener("load", getItems);
