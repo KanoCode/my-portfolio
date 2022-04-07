@@ -190,6 +190,7 @@ form.addEventListener('submit', (event) => {
 });
 
 
+
 // Data storage
 
 form.addEventListener('input', () => {
@@ -245,3 +246,4 @@ function getItems() {
 }
 
 window.addEventListener("load", getItems);
+
