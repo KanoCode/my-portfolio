@@ -165,15 +165,16 @@
           <ul>
             <li class="desktop-view-input">
               <input
-          
+                class="first-name"
                 type="text"
+                required
                 placeholder="First Name"
                 maxlength="30"
                 name="user_name"
               />
 
               <input
-                 type="text"
+                type="text"
                 class="second-name-input"
                 placeholder="Last Name"
                 maxlength="30"
@@ -182,6 +183,8 @@
             </li>
             <li>
               <input
+                required
+                class="email"
                 id="mail"
                 type="email"
                 placeholder="Email address"
@@ -192,8 +195,9 @@
             <li>
               <textarea
                 name="user_message"
-    
                 maxlength="500"
+                required
+                class="message"
                 id="message"
                 cols="30"
                 rows="10"

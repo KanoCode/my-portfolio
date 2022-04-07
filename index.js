@@ -188,3 +188,30 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+// Data storage
+
+form.addEventListener('input', () => {
+  const formDataObj = {
+    firstName: document.querySelector('.first-name').value,
+    lastName: document.querySelector('.second-name-input').value,
+    email: document.querySelector('.email').value,
+    message: document.querySelector('.message').value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formDataObj));
+});
+
+function getItems() {
+  const { firstName } = JSON.parse(localStorage.getItem('formData'));
+
+  const { lastName } = JSON.parse(localStorage.getItem('formData'));
+  const { email } = JSON.parse(localStorage.getItem('formData'));
+  const { message } = JSON.parse(localStorage.getItem('formData'));
+
+  document.querySelector('.first-name').value = firstName;
+  document.querySelector('.second-name-input').value = lastName;
+  document.querySelector('.email').value = email;
+  document.querySelector('.message').value = message;
+}
+
+window.addEventListener('load', getItems);
