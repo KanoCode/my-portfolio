@@ -168,3 +168,23 @@ const closeModal = document.querySelector('.icon > i');
 closeModal.addEventListener('click', () => {
   popUp.classList.toggle('active');
 });
+
+// form validation
+
+const email = document.getElementById('mail');
+const error = document.querySelector('.error');
+const form = document.querySelector('form');
+
+let checkUppercase;
+let regX;
+
+// event listeners
+
+form.addEventListener('submit', (event) => {
+  regX = /[A-Z]/g;
+  checkUppercase = regX.test(email.value);
+  if (checkUppercase) {
+    error.textContent = 'please use lowercase letters only for email field ';
+    event.preventDefault();
+  }
+});

@@ -296,6 +296,11 @@ button:hover {
   border-radius: 4% 4% 0 0;
 }
 
+/* form validation */
+.error {
+  color: #dc3545;
+}
+
 .card-description {
   width: 70%;
   text-align: center;
