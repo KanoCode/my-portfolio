@@ -33,43 +33,49 @@ navBtn.addEventListener('click', showHiddenMenu);
 
 const cardsObj = [
   {
+    title: 'Linux Tech conference',
+    projectImg: '<img src="./assets/capstone-screenshot.png" alt= "project image">',
+    technologies: ['Bootstrap', 'SCSS', 'JavaScript', 'HTML'],
+    projectBtn: 'See Project',
+  },
+  {
     title: 'Multi-Post Stories Gain+Glory',
+    projectImg: '',
     technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
     projectBtn: 'See Project',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
+    projectImg: '',
     technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
     projectBtn: 'See Project',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
+    projectImg: '',
     technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
     projectBtn: 'See Project',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
+    projectImg: '',
     technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
     projectBtn: 'See Project',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
-    technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
-    projectBtn: 'See Project',
-  },
-  {
-    title: 'Multi-Post Stories Gain+Glory',
+    projectImg: '',
     technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
     projectBtn: 'See Project',
   },
 ];
 
-const popupData = {
+const popupData = [{
   postTitle: 'Keeping track of hundreds ofcomponents',
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   popupImageUrlDesktop:
-    './assets/Desktop-images/Container/Snapshoot Portfolio.png',
+    './assets/capstone-screenshot.png',
   popupImageUrlMobile: './assets/mobile-images/pop-up-mobile.png',
   technologiesPopup: [
     'Ruby on rails',
@@ -80,13 +86,13 @@ const popupData = {
     'terminal',
     'Codepen',
   ],
-  linkLive: 'https://kanocode.github.io/my-portfolio/',
-  linkSource: 'https://github.com/KanoCode/my-portfolio',
-};
+  linkLive: 'https://kanocode.github.io/Annual-Tech-conference-webpage/',
+  linkSource: 'https://github.com/KanoCode/Annual-Tech-conference-webpage',
+}];
 
 const template = document.createElement('template');
 let techStack = '';
-popupData.technologiesPopup.forEach((li) => {
+popupData[0].technologiesPopup.forEach((li) => {
   techStack += `<li>${li}</li>`;
 });
 
@@ -96,21 +102,21 @@ template.innerHTML = `<div class="popUp">
 <div class="icon"> <i class="fa-solid fa-times"></i> </div>
   <div class="imgPlaceholder">
     <img
-      src="${popupData.popupImageUrlDesktop}"
+      src="${popupData[0].popupImageUrlDesktop}"
       alt=""
       srcset=""
     />
   </div>
-  <h3>${popupData.postTitle}</h3>
+  <h3>${popupData[0].postTitle}</h3>
   <ul class="languages">
     ${techStack}
   </ul>
   <p>
-  ${popupData.description}
+  ${popupData[0].description}
   </p>
   <div class="project-btns">
     <button class="see-live">
-      <a href="${popupData.linkLive}" target="blank">See Live</a>
+      <a href="${popupData[0].linkLive}" target="blank">See Live</a>
       <img
         src="./assets/social-media/see-live-icon.svg"
         alt=""
@@ -118,7 +124,7 @@ template.innerHTML = `<div class="popUp">
       />
     </button>
     <button class="see-source">
-      <a href="${popupData.linkSource}" target="blank">See Source</a>
+      <a href="${popupData[0].linkSource}" target="blank">See Source</a>
       <img src="./assets/social-media/Vector.png" alt="" srcset="" />
     </button>
   </div>
@@ -139,7 +145,9 @@ const cardContainer = document.querySelector('.card-container');
 cardsObj.forEach((obj) => {
   const template = document.createElement('ul');
   template.innerHTML = `<li class="card-work">
-<div class="img-placeholder"></div>
+<div class="img-placeholder">
+${obj.projectImg.length === 0 ? '' : obj.projectImg}
+</div>
 <div class="card-details">
   <div class="card-description">
     <h2>${obj.title}</h2>
