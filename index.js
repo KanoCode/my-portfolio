@@ -34,37 +34,37 @@ navBtn.addEventListener('click', showHiddenMenu);
 const cardsObj = [
   {
     title: 'Linux Tech conference',
-    projectImg:'<img src="./assets/capstone-screenshot.png" alt= "project image">',
+    projectImg: '<img src="./assets/capstone-screenshot.png" alt= "project image">',
     technologies: ['Bootstrap', 'SCSS', 'JavaScript', 'HTML'],
     projectBtn: 'See Project',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
-    projectImg:'',
+    projectImg: '',
     technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
     projectBtn: 'See Project',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
-    projectImg:'',
+    projectImg: '',
     technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
     projectBtn: 'See Project',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
-    projectImg:'',
+    projectImg: '',
     technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
     projectBtn: 'See Project',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
-    projectImg:'',
+    projectImg: '',
     technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
     projectBtn: 'See Project',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
-    projectImg:'',
+    projectImg: '',
     technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
     projectBtn: 'See Project',
   },
@@ -146,7 +146,7 @@ cardsObj.forEach((obj) => {
   const template = document.createElement('ul');
   template.innerHTML = `<li class="card-work">
 <div class="img-placeholder">
-${obj.projectImg.length === 0 ? "": obj.projectImg }
+${obj.projectImg.length === 0 ? '' : obj.projectImg}
 </div>
 <div class="card-details">
   <div class="card-description">

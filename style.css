@@ -20,7 +20,8 @@
   list-style: none;
   text-decoration: none;
 }
-body{
+
+body {
   overflow-x: hidden;
 }
 
@@ -225,7 +226,23 @@ header {
   height: 500px;
   border-radius: 8% 8% 0 0;
 }
-#work .img-placeholder img{
+
+.imgPlaceholder > img {
+  width: 100%;
+}
+
+.card-about > .img-placeholder {
+  height: 310px;
+  width: 327px;
+}
+
+.card-about > .img-placeholder > img {
+  position: relative;
+  top: 20%;
+  left: 30%;
+}
+
+#work .img-placeholder img {
   width: 100%;
   height: 100%;
 }
@@ -362,10 +379,6 @@ button:hover {
   width: 90%;
 }
 
-.imgPlaceholder > img {
-  width: 100%;
-}
-
 .popup-container > h3 {
   grid-column: span 12;
   font-size: 32px;
@@ -437,17 +450,6 @@ button:hover {
 .card-about h2 {
   color: #3a4a42;
   font-size: var(--card-header-font-size);
-}
-
-.card-about > .img-placeholder > img {
-  position: relative;
-  top: 20%;
-  left: 30%;
-}
-
-.card-about > .img-placeholder {
-  height: 310px;
-  width: 327px;
 }
 
 .card-about > .card-details {
