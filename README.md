@@ -33,7 +33,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@KanoCode](https://github.com/KanoCode)
 - Twitter: [@Kanombola_s](https://twitter.com/Kanombola_s)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kanombola-kanombola-a38b061a4/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kanombola-kanombola/)
 
 ## 🤝 Contributing
 

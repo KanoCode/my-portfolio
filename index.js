@@ -34,111 +34,197 @@ navBtn.addEventListener('click', showHiddenMenu);
 const cardsObj = [
   {
     title: 'Linux Tech conference',
-    projectImg: '<img src="./assets/capstone-screenshot.png" alt= "project image">',
+    projectImg:
+      '<img src="./assets/capstone-screenshot.png" alt= "project image">',
     technologies: ['Bootstrap', 'SCSS', 'JavaScript', 'HTML'],
     projectBtn: 'See Project',
   },
   {
-    title: 'Multi-Post Stories Gain+Glory',
-    projectImg: '',
-    technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
+    title: 'To-do list application',
+    projectImg: '<img src="./assets/kanocode.github.io_todo-list-app_.png" alt="project image" >',
+    technologies: ['Webpack', 'CSS', 'JavaSc0ript', 'HTML'],
     projectBtn: 'See Project',
   },
   {
-    title: 'Multi-Post Stories Gain+Glory',
-    projectImg: '',
-    technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
+    title: 'Math magicians ',
+    projectImg: '<img src="./assets/all-devices-black.png" alt="project image" >',
+    technologies: ['React.js', 'CSS', 'JavaScript', 'HTML'],
     projectBtn: 'See Project',
   },
   {
-    title: 'Multi-Post Stories Gain+Glory',
-    projectImg: '',
-    technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
+    title: 'Track your favorite movies ',
+    projectImg: '<img src="./assets/Kano-Tah-Movies_dist_.png" alt="project image" >',
+    technologies: ['Webpack', 'CSS', 'JavaScript', 'HTML'],
     projectBtn: 'See Project',
   },
   {
-    title: 'Multi-Post Stories Gain+Glory',
-    projectImg: '',
-    technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
+    title: 'Are you an avid reader',
+    projectImg: '<img src="./assets/book-store-app.png" alt="project image" >',
+    technologies: ['React', 'CSS', 'JavaScript', 'HTML'],
     projectBtn: 'See Project',
   },
   {
-    title: 'Multi-Post Stories Gain+Glory',
-    projectImg: '',
+    title: 'Track game progress and scores',
+    projectImg: '<img src="./assets/Leaderboard.png" alt="project image" >',
     technologies: ['Ruby on rails', 'CSS', 'JavaSc0ript', 'HTML'],
     projectBtn: 'See Project',
   },
 ];
 
-const popupData = [{
-  postTitle: 'Keeping track of hundreds ofcomponents',
-  description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-  popupImageUrlDesktop:
-    './assets/capstone-screenshot.png',
-  popupImageUrlMobile: './assets/mobile-images/pop-up-mobile.png',
-  technologiesPopup: [
-    'Ruby on rails',
-    'CSS',
-    'html',
-    'Github',
-    'Bootstrap',
-    'terminal',
-    'Codepen',
-  ],
-  linkLive: 'https://kanocode.github.io/Annual-Tech-conference-webpage/',
-  linkSource: 'https://github.com/KanoCode/Annual-Tech-conference-webpage',
-}];
+const popupData = [
+  {
+    postTitle: 'Keeping track of hundreds ofcomponents',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    popupImageUrlDesktop: './assets/capstone-screenshot.png',
+    technologiesPopup: [
+      'Ruby on rails',
+      'CSS',
+      'html',
+      'Github',
+      'Bootstrap',
+      'terminal',
+      'Codepen',
+    ],
+    linkLive: 'https://kanocode.github.io/Annual-Tech-conference-webpage/',
+    linkSource: 'https://github.com/KanoCode/Annual-Tech-conference-webpage',
+  },
+  {
+    postTitle: 'To-do list application to stay pro-active',
+    description:
+      'This is a simple webapp that allows a user to keep track of things to do within a day, mark activities that have been done, it also allows a user to delete an activity.',
+    popupImageUrlDesktop: './assets/kanocode.github.io_todo-list-app_.png',
+    technologiesPopup: [
+      'Webpack',
+      'CSS',
+      'html',
+      'Github',
+      'Bootstrap',
+      'terminal',
+      'Codepen',
+    ],
+    linkLive: 'https://kanocode.github.io/todo-list-app/',
+    linkSource: 'https://github.com/KanoCode/todo-list-app/',
+  },
+  {
+    postTitle: "Let's do some math with math magicians",
+    description:
+      'This is a simple webapp that allows a user to keep track of things to do within a day, mark activities that have been done, it also allows a user to delete an activity.',
+    popupImageUrlDesktop: './assets/all-devices-black.png',
+    technologiesPopup: [
+      'Webpack',
+      'CSS',
+      'html',
+      'Github',
+      'Bootstrap',
+      'terminal',
+      'Codepen',
+    ],
+    linkLive: 'https://boisterous-chimera-2fdfd3.netlify.app/',
+    linkSource: 'https://github.com/KanoCode/Annual-Tech-conference-webpage',
+  },
+  {
+    postTitle: 'All your favorite movies in one place ',
+    description:
+      'This educational project is to build our own web application based on an external API. We selected an API that provides data about a topic that we like and built the web app around it. The web app will have 2 user interfaces',
+    popupImageUrlDesktop: './assets/Kano-Tah-Movies_dist_.png',
+    technologiesPopup: [
+      'React',
+      'CSS',
+      'html',
+      'Github',
+      'Styled-components',
+      'terminal',
+      'Codepen',
+    ],
+    linkLive: 'https://kanocode.github.io/Kano-Tah-Movies/dist/',
+    linkSource: 'https://github.com/KanoCode/Kano-Tah-Movies',
+  },
+  {
+    postTitle: "Are you an avid reader? Glad you're here",
+    description: 'The Bookstore is a web application that allows you to: Display a list of books. Add a book. Remove a selected book. Kindly give it a <i class="fa-solid fa-star"></i> on github it helps me a lot',
+    popupImageUrlDesktop: './assets/book-store-app.png',
+    technologiesPopup: [
+      'React',
+      'CSS',
+      'html',
+      'Github',
+      'Font-awesome',
+      'Netlify',
+      'Codepen',
+    ],
+    linkLive: 'https://book-store-appl.herokuapp.com/',
+    linkSource: 'https://github.com/KanoCode/book-store-app',
+  },
+  {
+    postTitle: 'Keep track of the scores on your game, checkout leaderboard',
+    description: 'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.. Kindly give it a <i class="fa-solid fa-star"></i> on github it helps me a lot',
+    popupImageUrlDesktop: './assets/Leaderboard.png',
+    technologiesPopup: [
+      'Webpack',
+      'CSS',
+      'html',
+      'Github',
+      'Font-awesome',
+      'Bootstrap',
+      'Codepen',
+    ],
+    linkLive: 'https://kanocode.github.io/Leaderboard/',
+    linkSource: 'https://github.com/KanoCode/Leaderboard',
+  },
+];
 
 const template = document.createElement('template');
-let techStack = '';
-popupData[0].technologiesPopup.forEach((li) => {
-  techStack += `<li>${li}</li>`;
-});
-
-template.innerHTML = `<div class="popUp">
-  
-<div class="popup-container">
-<div class="icon"> <i class="fa-solid fa-times"></i> </div>
-  <div class="imgPlaceholder">
-    <img
-      src="${popupData[0].popupImageUrlDesktop}"
-      alt=""
-      srcset=""
-    />
-  </div>
-  <h3>${popupData[0].postTitle}</h3>
-  <ul class="languages">
-    ${techStack}
-  </ul>
-  <p>
-  ${popupData[0].description}
-  </p>
-  <div class="project-btns">
-    <button class="see-live">
-      <a href="${popupData[0].linkLive}" target="blank">See Live</a>
-      <img
-        src="./assets/social-media/see-live-icon.svg"
-        alt=""
-        srcset=""
-      />
-    </button>
-    <button class="see-source">
-      <a href="${popupData[0].linkSource}" target="blank">See Source</a>
-      <img src="./assets/social-media/Vector.png" alt="" srcset="" />
-    </button>
-  </div>
-</div>
-</div>
-  `;
 
 document.body.appendChild(template.content);
-
-const popUp = document.querySelector('.popUp');
 
 // //get card container
 
 const cardContainer = document.querySelector('.card-container');
+// create popup
+function createPopUp(i) {
+  let techStack = '';
+  popupData[i].technologiesPopup.forEach((li) => {
+    techStack += `<li>${li}</li>`;
+  });
+
+  const popupContainer = document.createElement('div');
+  popupContainer.className = 'popUp active';
+  popupContainer.innerHTML = `
+ <div class="popup-container">
+ <div class="icon"> <i class="fa-solid fa-times"></i> </div>
+   <div class="imgPlaceholder">
+     <img
+       src="${popupData[i].popupImageUrlDesktop}"
+       alt=""
+       srcset=""
+     />
+   </div>
+   <h3>${popupData[i].postTitle}</h3>
+   <ul class="languages">
+     ${techStack}
+   </ul>
+   <p>
+   ${popupData[i].description}
+   </p>
+   <div class="project-btns">
+     <button class="see-live">
+       <a href="${popupData[i].linkLive}" target="blank">See Live</a>
+       <img
+         src="./assets/social-media/see-live-icon.svg"
+         alt=""
+         srcset=""
+       />
+     </button>
+     <button class="see-source">
+       <a href="${popupData[i].linkSource}" target="blank">See Source</a>
+       <img src="./assets/social-media/Vector.png" alt="" srcset="" />
+     </button>
+   </div>
+ </div>
+`;
+  cardContainer.append(popupContainer);
+}
 
 // create card
 
@@ -166,15 +252,15 @@ ${obj.projectImg.length === 0 ? '' : obj.projectImg}
 
 const cardButtons = document.querySelectorAll('.see-project');
 
-cardButtons.forEach((btn) => {
+cardButtons.forEach((btn, i) => {
   btn.addEventListener('click', () => {
-    popUp.classList.toggle('active');
+    createPopUp(i);
+    const closeModal = document.querySelector('.icon > i');
+    closeModal.addEventListener('click', () => {
+      // remove modal
+      cardContainer.removeChild(cardContainer.childNodes[6]);
+    });
   });
-});
-
-const closeModal = document.querySelector('.icon > i');
-closeModal.addEventListener('click', () => {
-  popUp.classList.toggle('active');
 });
 
 // form validation
