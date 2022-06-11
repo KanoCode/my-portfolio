@@ -47,25 +47,25 @@ const cardsObj = [
   },
   {
     title: "Math magicians ",
-    projectImg:  `<img src="./assets/all-devices-black.png" alt="project image" >`,
+    projectImg: `<img src="./assets/all-devices-black.png" alt="project image" >`,
     technologies: ["React.js", "CSS", "JavaScript", "HTML"],
     projectBtn: "See Project",
   },
   {
     title: "Track your favorite movies ",
-    projectImg:  `<img src="./assets/Kano-Tah-Movies_dist_.png" alt="project image" >`,
+    projectImg: `<img src="./assets/Kano-Tah-Movies_dist_.png" alt="project image" >`,
     technologies: ["Webpack", "CSS", "JavaScript", "HTML"],
     projectBtn: "See Project",
   },
   {
-    title: "Multi-Post Stories Gain+Glory",
-    projectImg: "",
-    technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"],
+    title: "Are you an avid reader",
+    projectImg: `<img src="./assets/book-store-app.png" alt="project image" >`,
+    technologies: ["React", "CSS", "JavaScript", "HTML"],
     projectBtn: "See Project",
   },
   {
-    title: "Multi-Post Stories Gain+Glory",
-    projectImg: "",
+    title: "Track game progress and scores",
+    projectImg: `<img src="./assets/Leaderboard.png" alt="project image" >`,
     technologies: ["Ruby on rails", "CSS", "JavaSc0ript", "HTML"],
     projectBtn: "See Project",
   },
@@ -77,7 +77,6 @@ const popupData = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     popupImageUrlDesktop: "./assets/capstone-screenshot.png",
-    popupImageUrlMobile: "./assets/mobile-images/pop-up-mobile.png",
     technologiesPopup: [
       "Ruby on rails",
       "CSS",
@@ -95,7 +94,6 @@ const popupData = [
     description:
       "This is a simple webapp that allows a user to keep track of things to do within a day, mark activities that have been done, it also allows a user to delete an activity.",
     popupImageUrlDesktop: "./assets/kanocode.github.io_todo-list-app_.png",
-    popupImageUrlMobile: "./assets/mobile-images/pop-up-mobile.png",
     technologiesPopup: [
       "Webpack",
       "CSS",
@@ -105,15 +103,14 @@ const popupData = [
       "terminal",
       "Codepen",
     ],
-    linkLive: "https://kanocode.github.io/Annual-Tech-conference-webpage/",
-    linkSource: "https://github.com/KanoCode/Annual-Tech-conference-webpage",
+    linkLive: "https://kanocode.github.io/todo-list-app/",
+    linkSource: "https://github.com/KanoCode/todo-list-app/",
   },
   {
     postTitle: "Let's do some math with math magicians",
     description:
       "This is a simple webapp that allows a user to keep track of things to do within a day, mark activities that have been done, it also allows a user to delete an activity.",
     popupImageUrlDesktop: "./assets/all-devices-black.png",
-    popupImageUrlMobile: "./assets/mobile-images/pop-up-mobile.png",
     technologiesPopup: [
       "Webpack",
       "CSS",
@@ -123,17 +120,61 @@ const popupData = [
       "terminal",
       "Codepen",
     ],
-    linkLive: "https://kanocode.github.io/Annual-Tech-conference-webpage/",
+    linkLive: "https://boisterous-chimera-2fdfd3.netlify.app/",
     linkSource: "https://github.com/KanoCode/Annual-Tech-conference-webpage",
+  },
+  {
+    postTitle: "All your favorite movies in one place ",
+    description:
+      "This educational project is to build our own web application based on an external API. We selected an API that provides data about a topic that we like and built the web app around it. The web app will have 2 user interfaces",
+    popupImageUrlDesktop: "./assets/Kano-Tah-Movies_dist_.png",
+    technologiesPopup: [
+      "React",
+      "CSS",
+      "html",
+      "Github",
+      "Styled-components",
+      "terminal",
+      "Codepen",
+    ],
+    linkLive: "https://kanocode.github.io/Kano-Tah-Movies/dist/",
+    linkSource: "https://github.com/KanoCode/Kano-Tah-Movies",
+  },
+  {
+    postTitle: "Are you an avid reader? Glad you're here",
+    description: `The Bookstore is a web application that allows you to: Display a list of books. Add a book. Remove a selected book. Kindly give it a <i class="fa-solid fa-star"></i> on github it helps me a lot`,
+    popupImageUrlDesktop: "./assets/book-store-app.png",
+    technologiesPopup: [
+      "React",
+      "CSS",
+      "html",
+      "Github",
+      "Font-awesome",
+      "Netlify",
+      "Codepen",
+    ],
+    linkLive: "https://book-store-appl.herokuapp.com/",
+    linkSource: "https://github.com/KanoCode/book-store-app",
+  },
+  {
+    postTitle: "Keep track of the scores on your game, checkout leaderboard",
+    description: `The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.. Kindly give it a <i class="fa-solid fa-star"></i> on github it helps me a lot`,
+    popupImageUrlDesktop: "./assets/Leaderboard.png",
+    technologiesPopup: [
+      "Webpack",
+      "CSS",
+      "html",
+      "Github",
+      "Font-awesome",
+      "Bootstrap",
+      "Codepen",
+    ],
+    linkLive: "https://kanocode.github.io/Leaderboard/",
+    linkSource: "https://github.com/KanoCode/Leaderboard",
   },
 ];
 
 const template = document.createElement("template");
-let techStack = "";
-popupData[0].technologiesPopup.forEach((li) => {
-  techStack += `<li>${li}</li>`;
-});
-
 
 document.body.appendChild(template.content);
 
@@ -144,6 +185,10 @@ const popUp = document.querySelector(".popUp");
 const cardContainer = document.querySelector(".card-container");
 //create popup
 function createPopUp(i) {
+  let techStack = "";
+  popupData[i].technologiesPopup.forEach((li) => {
+    techStack += `<li>${li}</li>`;
+  });
 
   const popupContainer = document.createElement("div");
   popupContainer.className = "popUp active";
@@ -213,15 +258,12 @@ cardButtons.forEach((btn, i) => {
   btn.addEventListener("click", () => {
     createPopUp(i);
     const closeModal = document.querySelector(".icon > i");
-closeModal.addEventListener("click", () => {
-//remove modal
-  cardContainer.removeChild(cardContainer.childNodes[6])
-});
-   
+    closeModal.addEventListener("click", () => {
+      //remove modal
+      cardContainer.removeChild(cardContainer.childNodes[6]);
+    });
   });
 });
-
-
 
 // form validation
 
@@ -269,3 +311,4 @@ function getItems() {
 }
 
 window.addEventListener("load", getItems);
+
