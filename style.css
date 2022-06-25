@@ -42,6 +42,10 @@ body {
   justify-content: center;
 }
 
+.social-links a {
+  color: #505f79;
+}
+
 h1 {
   font-size: 50px;
   color: var(--heading-color);
